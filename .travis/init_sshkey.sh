@@ -10,4 +10,6 @@ echo "SSH key init: ${RSAKEY}"
 pushd ${DIR}
 openssl aes-256-cbc -K ${KEY} -iv ${IV} -in ${RSAKEY} -out ~/.ssh/id_rsa -d
 chmod 600 ~/.ssh/id_rsa
+git config user.name "DUNE Community Bot"
+git config user.email "dune-community.bot@wwu.de"
 popd
