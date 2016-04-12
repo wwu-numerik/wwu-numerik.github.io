@@ -5,9 +5,11 @@
 # Authors:
 #   Rene Milk       (2016)
 
-sudo: required
+sudo: false
 dist: trusty
-language: generic
+language: python
+python:
+    - "3.4"
 
 before_script:
     - pushd ${TRAVIS_BUILD_DIR}/.travis
@@ -16,7 +18,7 @@ before_script:
 
 deploy:
     provider: script
-    script: .travis/update_static_pages.bash
+    script: .travis/update_static_pages.py
 
 notifications:
   email:
