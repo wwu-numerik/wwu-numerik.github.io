@@ -1,0 +1,24 @@
+# This file is part of the dune-xt project:
+#   https://github.com/dune-community/dune-xt-super
+# The copyright lies with the authors of this file (see below).
+# License: BSD 2-Clause License (http://opensource.org/licenses/BSD-2-Clause)
+# Authors:
+#   Rene Milk       (2016)
+
+sudo: required
+dist: trusty
+language: generic
+
+before_script:
+    - pushd ${TRAVIS_BUILD_DIR}/.travis
+    - ./init_sshkey.sh ${encrypted_b777c1cc481d_key} ${encrypted_b777c1cc481d_iv} wwu-numerik.github.io
+    - popd
+
+deploy:
+    provider: script
+    script: .travis/update_static_pages.bash
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change

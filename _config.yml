@@ -1,0 +1,4 @@
+name: Institute for Applied Mathematics, University of Münster
+exclude: [vendor]
+markdown: kramdown
+
