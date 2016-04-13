@@ -6,7 +6,9 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ${DIR}/regenerate_doc_index.py
 
-if [ $(git diff-index --quiet --cached HEAD) ] ; then 
+if git diff-index --quiet HEAD -- ; then 
+  echo "no changes to index"
+else
   git config user.name "DUNE Community Bot"
   git config user.email "dune-community.bot@wwu.de"
   git add ${DIR}/../docs/index.md
@@ -14,4 +16,3 @@ if [ $(git diff-index --quiet --cached HEAD) ] ; then
   git push 
   git diff-index
 fi
-git diff-index --cached HEAD
