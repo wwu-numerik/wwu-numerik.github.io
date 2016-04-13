@@ -10,7 +10,7 @@ fi
 git checkout ${TRAVIS_BRANCH}
 ${DIR}/regenerate_doc_index.py
 
-if git diff-index --quiet HEAD -- ; then 
+if [ $(git ls-files -m) ] ; then 
   echo "no changes to index"
 else
   git remote set-url origin --push $(git config --get remote.origin.url | sed 's;https://github.com/;git@github.com:;g')
