@@ -17,4 +17,5 @@ with open(out, 'wt') as index:
         index.write('- {}\n'.format(dir))
         for sub in subs:
             index.write('{ws}- {sub} [main]({dir}/{sub}/index.html) | [class index]({dir}/{sub}/classes.html)\n'.format(ws=' '*4, sub=sub, dir=dir))
+            print('{ws}- {sub} [main]({dir}/{sub}/index.html) | [class index]({dir}/{sub}/classes.html)\n'.format(ws=' '*4, sub=sub, dir=dir))
 

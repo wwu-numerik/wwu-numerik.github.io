@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+set -x
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ${DIR}/regenerate_doc_index.py
@@ -13,3 +14,4 @@ if [ $(git diff-index --quiet --cached HEAD) ] ; then
   git push 
   git diff-index
 fi
+git diff-index --cached HEAD
