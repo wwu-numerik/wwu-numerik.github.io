@@ -63,11 +63,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d4335644b97e181d04447f28a07ea4e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a0d4335644b97e181d04447f28a07ea4e">hasExactSolution</a> () const finaloverride</td></tr>
 <tr class="memdesc:a0d4335644b97e181d04447f28a07ea4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">does the problem implement an exact solution?  <a href="#a0d4335644b97e181d04447f28a07ea4e">More...</a><br/></td></tr>
 <tr class="separator:a0d4335644b97e181d04447f28a07ea4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af05bbda10bb6cee1034c55ac499d4e3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#af05bbda10bb6cee1034c55ac499d4e3d">ModelProblemData</a> ()</td></tr>
-<tr class="separator:af05bbda10bb6cee1034c55ac499d4e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb466b9c681ea66e180b89b609d1a230"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#acb466b9c681ea66e180b89b609d1a230">getMacroGridFile</a> () const finaloverride</td></tr>
-<tr class="memdesc:acb466b9c681ea66e180b89b609d1a230"><td class="mdescLeft">&#160;</td><td class="mdescRight">getMacroGridFile returns a path to a Dune::Grid loadable file (dgf)  <a href="#acb466b9c681ea66e180b89b609d1a230">More...</a><br/></td></tr>
-<tr class="separator:acb466b9c681ea66e180b89b609d1a230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5049f11a9b12e7016cc10859ae5432a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a5049f11a9b12e7016cc10859ae5432a7">ModelProblemData</a> (MPIHelper::MPICommunicator, MPIHelper::MPICommunicator, Dune::XT::Common::Configuration)</td></tr>
+<tr class="separator:a5049f11a9b12e7016cc10859ae5432a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6cbfd8c87080748ff13d3d1a2289e71"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00180.html#gad729d9464154a48bbaedeee382aa7569">BoundaryInfoType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#ab6cbfd8c87080748ff13d3d1a2289e71">boundaryInfo</a> () const finaloverride</td></tr>
 <tr class="separator:ab6cbfd8c87080748ff13d3d1a2289e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a758b5a073bcfa8968a1a746a298711"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00180.html#ga176549b43f0f31450eccc23e49619a76">SubBoundaryInfoType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a6a758b5a073bcfa8968a1a746a298711">subBoundaryInfo</a> () const finaloverride</td></tr>
@@ -107,15 +104,32 @@ SubView::Intersection &gt;&#160;</td><td class="memItemRight" valign="bottom"><a
 <tr class="separator:ga176549b43f0f31450eccc23e49619a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af05bbda10bb6cee1034c55ac499d4e3d"></a>
+<a class="anchor" id="a5049f11a9b12e7016cc10859ae5432a7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">Dune::Multiscale::Problem::Random::ModelProblemData::ModelProblemData </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">MPIHelper::MPICommunicator&#160;</td>
+          <td class="paramname"><em>global</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">MPIHelper::MPICommunicator&#160;</td>
+          <td class="paramname"><em>local</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dune::XT::Common::Configuration&#160;</td>
+          <td class="paramname"><em>config_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -145,35 +159,6 @@ SubView::Intersection &gt;&#160;</td><td class="memItemRight" valign="bottom"><a
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="a00180.html#ga9d522782dd693e66990ab4eabb03bb4f">Dune::Multiscale::Problem::IModelProblemData</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acb466b9c681ea66e180b89b609d1a230"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string Dune::Multiscale::Problem::Random::ModelProblemData::getMacroGridFile </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>getMacroGridFile returns a path to a Dune::Grid loadable file (dgf) </p>
-<dl class="section return"><dt>Returns</dt><dd>macroGridName is set to said path </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="a00185.html#_todo000006">Todo:</a></b></dt><dd>paths need to be relative to binary </dd></dl>
-
-<p>Implements <a class="el" href="a00180.html#ga70cc02df49052bef72547c89fd7336bf">Dune::Multiscale::Problem::IModelProblemData</a>.</p>
 
 </div>
 </div>
@@ -337,7 +322,7 @@ SubView::Intersection &gt;&#160;</td><td class="memItemRight" valign="bottom"><a
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 12 2016 11:48:53 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 11:32:41 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -92,14 +92,11 @@ Functions</h2></td></tr>
 <tr class="separator:ga5a69e01fe296eee59f0dedfff2d2b865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa037821b8ec76b91182b3439ae4233d4"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00180.html#gaa037821b8ec76b91182b3439ae4233d4">Dune::Multiscale::Problem::ZeroNeumannData::order</a> () const </td></tr>
 <tr class="separator:gaa037821b8ec76b91182b3439ae4233d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c6861db29dd3504402f062b4cc22dd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00180.html#ga0c6861db29dd3504402f062b4cc22dd6">Dune::Multiscale::Problem::IModelProblemData::IModelProblemData</a> ()</td></tr>
-<tr class="memdesc:ga0c6861db29dd3504402f062b4cc22dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for ModelProblemData.  <a href="#ga0c6861db29dd3504402f062b4cc22dd6">More...</a><br/></td></tr>
-<tr class="separator:ga0c6861db29dd3504402f062b4cc22dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70d970571beeb78177cd487cd4aa775f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00180.html#ga70d970571beeb78177cd487cd4aa775f">Dune::Multiscale::Problem::IModelProblemData::IModelProblemData</a> (MPIHelper::MPICommunicator, MPIHelper::MPICommunicator, Dune::XT::Common::Configuration)</td></tr>
+<tr class="memdesc:ga70d970571beeb78177cd487cd4aa775f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for ModelProblemData.  <a href="#ga70d970571beeb78177cd487cd4aa775f">More...</a><br/></td></tr>
+<tr class="separator:ga70d970571beeb78177cd487cd4aa775f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5d38567ca81707a11f15edebda9d88d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00180.html#gad5d38567ca81707a11f15edebda9d88d">Dune::Multiscale::Problem::IModelProblemData::~IModelProblemData</a> ()</td></tr>
 <tr class="separator:gad5d38567ca81707a11f15edebda9d88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga70cc02df49052bef72547c89fd7336bf"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00180.html#ga70cc02df49052bef72547c89fd7336bf">Dune::Multiscale::Problem::IModelProblemData::getMacroGridFile</a> () const =0</td></tr>
-<tr class="memdesc:ga70cc02df49052bef72547c89fd7336bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">getMacroGridFile returns a path to a Dune::Grid loadable file (dgf)  <a href="#ga70cc02df49052bef72547c89fd7336bf">More...</a><br/></td></tr>
-<tr class="separator:ga70cc02df49052bef72547c89fd7336bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga750041015e004e699d1d4225cd1ec8b7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00180.html#ga750041015e004e699d1d4225cd1ec8b7">Dune::Multiscale::Problem::IModelProblemData::hasExactSolution</a> () const </td></tr>
 <tr class="memdesc:ga750041015e004e699d1d4225cd1ec8b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">does the problem implement an exact solution?  <a href="#ga750041015e004e699d1d4225cd1ec8b7">More...</a><br/></td></tr>
 <tr class="separator:ga750041015e004e699d1d4225cd1ec8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,7 +242,7 @@ CommonTraits::DomainType &gt;&#160;</td><td class="memItemRight" valign="bottom"
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="a00054.html#ab6cbfd8c87080748ff13d3d1a2289e71">Dune::Multiscale::Problem::Random::ModelProblemData</a>, <a class="el" href="a00056.html#a2944db144cb41d975d5a6cb3c5abbf00">Dune::Multiscale::Problem::Synthetic::ModelProblemData</a>, <a class="el" href="a00055.html#a876cfe540b87694e88f1da064db6e974">Dune::Multiscale::Problem::SPE10::ModelProblemData</a>, and <a class="el" href="a00057.html#a155afbf4c93a966bdbd81bfcf08e8203">Dune::Multiscale::Problem::Tarbert::ModelProblemData</a>.</p>
+<p>Implemented in <a class="el" href="a00054.html#ab6cbfd8c87080748ff13d3d1a2289e71">Dune::Multiscale::Problem::Random::ModelProblemData</a>, <a class="el" href="a00056.html#a2944db144cb41d975d5a6cb3c5abbf00">Dune::Multiscale::Problem::Synthetic::ModelProblemData</a>, <a class="el" href="a00057.html#a155afbf4c93a966bdbd81bfcf08e8203">Dune::Multiscale::Problem::Tarbert::ModelProblemData</a>, and <a class="el" href="a00055.html#a876cfe540b87694e88f1da064db6e974">Dune::Multiscale::Problem::SPE10::ModelProblemData</a>.</p>
 
 <p>Referenced by <a class="el" href="a00009.html#af1e30a30236a6dd0eaa7f63fd778b2d1">Dune::Multiscale::CoarseScaleOperator::CoarseScaleOperator()</a>, and <a class="el" href="a00004.html#aebea61b628a16557b4a5163eebd57b91">Dune::Multiscale::BoundaryValueHelper&lt; LocalNeumann &gt;::dirichlet_projection()</a>.</p>
 
@@ -290,7 +287,7 @@ CommonTraits::DomainType &gt;&#160;</td><td class="memItemRight" valign="bottom"
 </div><div class="memdoc">
 <p>in the linear setting, use the structure A^{}_i(x,) = A^{}_{i1}(x)  + A^{}_{i2}(x)  (diffusive) flux = A^{}( x , direction ) (typically direction is some 'gradient_of_a_function') </p>
 
-<p>Implemented in <a class="el" href="a00014.html#a61b66f8e9f7ecb6878d6baaa71de2a76">Dune::Multiscale::Problem::Random::Diffusion</a>, <a class="el" href="a00016.html#a8e6b77fbef3b13103e27175e9fccfbd3">Dune::Multiscale::Problem::Synthetic::Diffusion</a>, <a class="el" href="a00015.html#a31502058da430b89d6cc78242132d4b1">Dune::Multiscale::Problem::SPE10::Diffusion</a>, <a class="el" href="a00017.html#a9ad93d81113574d04049d59dd32ed413">Dune::Multiscale::Problem::Tarbert::Diffusion</a>, and <a class="el" href="a00018.html#a1d5d3270a4521edbe12a20f4176e6b6d">Dune::Multiscale::Problem::Thirteen::Diffusion</a>.</p>
+<p>Implemented in <a class="el" href="a00014.html#a61b66f8e9f7ecb6878d6baaa71de2a76">Dune::Multiscale::Problem::Random::Diffusion</a>, <a class="el" href="a00016.html#a8e6b77fbef3b13103e27175e9fccfbd3">Dune::Multiscale::Problem::Synthetic::Diffusion</a>, <a class="el" href="a00017.html#a9ad93d81113574d04049d59dd32ed413">Dune::Multiscale::Problem::Tarbert::Diffusion</a>, <a class="el" href="a00015.html#a31502058da430b89d6cc78242132d4b1">Dune::Multiscale::Problem::SPE10::Diffusion</a>, and <a class="el" href="a00018.html#a1d5d3270a4521edbe12a20f4176e6b6d">Dune::Multiscale::Problem::Thirteen::Diffusion</a>.</p>
 
 <p>Referenced by <a class="el" href="a00005.html#a103137be262dde673b1fc780575b96be">Dune::Multiscale::CoarseBasisProduct::evaluate()</a>, and <a class="el" href="a00026.html#a31454bc79b5bb307ae1f6989ce7ab712">Dune::Multiscale::DirichletProduct::evaluate()</a>.</p>
 
@@ -476,35 +473,6 @@ CommonTraits::DomainType &gt;&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
-<a class="anchor" id="ga70cc02df49052bef72547c89fd7336bf"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::string Dune::Multiscale::Problem::IModelProblemData::getMacroGridFile </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>getMacroGridFile returns a path to a Dune::Grid loadable file (dgf) </p>
-<dl class="section return"><dt>Returns</dt><dd>macroGridName is set to said path </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="a00185.html#_todo000006">Todo:</a></b></dt><dd>paths need to be relative to binary </dd></dl>
-
-<p>Implemented in <a class="el" href="a00054.html#acb466b9c681ea66e180b89b609d1a230">Dune::Multiscale::Problem::Random::ModelProblemData</a>, <a class="el" href="a00056.html#a2fbd3b1db37547b8cdac1a70f7b1fbd8">Dune::Multiscale::Problem::Synthetic::ModelProblemData</a>, <a class="el" href="a00055.html#ac6fcb3a2aa2360d1c471885f058f529c">Dune::Multiscale::Problem::SPE10::ModelProblemData</a>, <a class="el" href="a00057.html#a16d3c4832b9a14a6c6f15c14562369bd">Dune::Multiscale::Problem::Tarbert::ModelProblemData</a>, and <a class="el" href="a00058.html#a5d1853c89743a874aafc7a3d97fc2c8f">Dune::Multiscale::Problem::Thirteen::ModelProblemData</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="gac6368e28ee96d0fa6365a29abe3c42a8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -526,7 +494,7 @@ CommonTraits::DomainType &gt;&#160;</td><td class="memItemRight" valign="bottom"
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="a00054.html#a54b61d0e217b40fbec558d91587db3fc">Dune::Multiscale::Problem::Random::ModelProblemData</a>, <a class="el" href="a00056.html#aafd3b845c470aa3467af3a473b239239">Dune::Multiscale::Problem::Synthetic::ModelProblemData</a>, <a class="el" href="a00055.html#a8ed75a8ac02818d15c3f88d153492a13">Dune::Multiscale::Problem::SPE10::ModelProblemData</a>, and <a class="el" href="a00057.html#acaa680acfe7721cbe6319f818d7a30c7">Dune::Multiscale::Problem::Tarbert::ModelProblemData</a>.</p>
+<p>Reimplemented in <a class="el" href="a00054.html#a54b61d0e217b40fbec558d91587db3fc">Dune::Multiscale::Problem::Random::ModelProblemData</a>, <a class="el" href="a00056.html#aafd3b845c470aa3467af3a473b239239">Dune::Multiscale::Problem::Synthetic::ModelProblemData</a>, <a class="el" href="a00057.html#acaa680acfe7721cbe6319f818d7a30c7">Dune::Multiscale::Problem::Tarbert::ModelProblemData</a>, and <a class="el" href="a00055.html#a8ed75a8ac02818d15c3f88d153492a13">Dune::Multiscale::Problem::SPE10::ModelProblemData</a>.</p>
 
 <p>Referenced by <a class="el" href="a00046.html#a4d001f1ab64b1895f899b943d31fd667">Dune::Multiscale::LocalGridList::LocalGridList()</a>, and <a class="el" href="a00117.html#aed155c4f574c71662a3a2a1fe38303cf">setup()</a>.</p>
 
@@ -561,7 +529,7 @@ CommonTraits::DomainType &gt;&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
-<a class="anchor" id="ga0c6861db29dd3504402f062b4cc22dd6"></a>
+<a class="anchor" id="ga70d970571beeb78177cd487cd4aa775f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -571,8 +539,25 @@ CommonTraits::DomainType &gt;&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="memname">Dune::Multiscale::Problem::IModelProblemData::IModelProblemData </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">MPIHelper::MPICommunicator&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">MPIHelper::MPICommunicator&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dune::XT::Common::Configuration&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -961,7 +946,7 @@ CommonTraits::DomainType &gt;&#160;</td><td class="memItemRight" valign="bottom"
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="a00054.html#a6a758b5a073bcfa8968a1a746a298711">Dune::Multiscale::Problem::Random::ModelProblemData</a>, <a class="el" href="a00056.html#a0b0e91f1c625096c97b2822514d0e961">Dune::Multiscale::Problem::Synthetic::ModelProblemData</a>, <a class="el" href="a00055.html#a77457c18942b24c1ae019dd615491448">Dune::Multiscale::Problem::SPE10::ModelProblemData</a>, and <a class="el" href="a00057.html#ac7662da5a07f37c41b5f8d931d1e5d6c">Dune::Multiscale::Problem::Tarbert::ModelProblemData</a>.</p>
+<p>Implemented in <a class="el" href="a00054.html#a6a758b5a073bcfa8968a1a746a298711">Dune::Multiscale::Problem::Random::ModelProblemData</a>, <a class="el" href="a00056.html#a0b0e91f1c625096c97b2822514d0e961">Dune::Multiscale::Problem::Synthetic::ModelProblemData</a>, <a class="el" href="a00057.html#ac7662da5a07f37c41b5f8d931d1e5d6c">Dune::Multiscale::Problem::Tarbert::ModelProblemData</a>, and <a class="el" href="a00055.html#a77457c18942b24c1ae019dd615491448">Dune::Multiscale::Problem::SPE10::ModelProblemData</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1024,7 @@ CommonTraits::DomainType &gt;&#160;</td><td class="memItemRight" valign="bottom"
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 12 2016 11:48:52 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 11:32:41 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

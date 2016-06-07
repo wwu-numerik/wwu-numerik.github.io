@@ -32,7 +32,7 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_82e2637b923afec1bef1bc7e16fa0d56.html">dune-multiscale</a></li><li class="navelem"><a class="el" href="dir_0ca864486467a80cd961e278f23e8175.html">dune</a></li><li class="navelem"><a class="el" href="dir_4f83e09bebd32da0357d969745c1f68f.html">multiscale</a></li><li class="navelem"><a class="el" href="dir_3b8427ca46593cc6da0f2fd516076e70.html">problems</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d1022a1d91715dd743bf24f90eadc81d.html">src</a></li><li class="navelem"><a class="el" href="dir_3bbf7a195b39f9546477465614ac6bad.html">dune-multiscale</a></li><li class="navelem"><a class="el" href="dir_d1df8117c67e0b882c87ee18a3f65ed2.html">dune</a></li><li class="navelem"><a class="el" href="dir_79ef15928c626faff6fdae0bfc122d63.html">multiscale</a></li><li class="navelem"><a class="el" href="dir_e4e8c3c9059f4b50971eb3635f1148c4.html">problems</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -48,6 +48,7 @@
 <div class="textblock"><code>#include &lt;<a class="el" href="a00164_source.html">dune/multiscale/common/traits.hh</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="a00141_source.html">dune/multiscale/msfem/msfem_traits.hh</a>&gt;</code><br/>
 <code>#include &lt;dune/xt/common/memory.hh&gt;</code><br/>
+<code>#include &lt;dune/xt/common/configuration.hh&gt;</code><br/>
 <code>#include &lt;dune/stuff/functions/interfaces.hh&gt;</code><br/>
 <code>#include &lt;dune/stuff/functions/constant.hh&gt;</code><br/>
 <code>#include &lt;dune/stuff/grid/boundaryinfo.hh&gt;</code><br/>
@@ -145,7 +146,8 @@ DiffusionBase::Transfer<br class="typebreak"/>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">class </span>classname : <span class="keyword">public</span> <a class="code" href="a00011.html#a6335a2454a31fd7655db8eca53f72fc9">Dune::Multiscale::CommonTraits::ConstantFunctionBaseType</a> {                                  \</div>
 <div class="line">  public:                                                                                                              \</div>
-<div class="line">    classname()                                                                                                        \</div>
+<div class="line">    classname(MPIHelper::MPICommunicator <span class="comment">/*global*/</span>, MPIHelper::MPICommunicator <span class="comment">/*local*/</span>,                             \</div>
+<div class="line">              Dune::XT::Common::Configuration <span class="comment">/*config_in*/</span>)                                                           \</div>
 <div class="line">      : <a class="code" href="a00011.html#a6335a2454a31fd7655db8eca53f72fc9">Dune::Multiscale::CommonTraits::ConstantFunctionBaseType</a>(constant) {}                                          \</div>
 <div class="line">  };</div>
 <div class="ttc" id="a00011_html_a6335a2454a31fd7655db8eca53f72fc9"><div class="ttname"><a href="a00011.html#a6335a2454a31fd7655db8eca53f72fc9">Dune::Multiscale::CommonTraits::ConstantFunctionBaseType</a></div><div class="ttdeci">Stuff::Functions::Constant&lt; EntityType, FieldType, dimDomain, FieldType, dimRange &gt; ConstantFunctionBaseType</div><div class="ttdef"><b>Definition:</b> traits.hh:101</div></div>
@@ -167,7 +169,8 @@ DiffusionBase::Transfer<br class="typebreak"/>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">class </span>classname : <span class="keyword">public</span> <a class="code" href="a00011.html#a6335a2454a31fd7655db8eca53f72fc9">Dune::Multiscale::CommonTraits::ConstantFunctionBaseType</a> {                                  \</div>
 <div class="line">  public:                                                                                                              \</div>
-<div class="line">    classname()                                                                                                        \</div>
+<div class="line">    classname(MPIHelper::MPICommunicator <span class="comment">/*global*/</span>, MPIHelper::MPICommunicator <span class="comment">/*local*/</span>,                             \</div>
+<div class="line">              Dune::XT::Common::Configuration <span class="comment">/*config_in*/</span>)                                                           \</div>
 <div class="line">      : <a class="code" href="a00011.html#a6335a2454a31fd7655db8eca53f72fc9">Dune::Multiscale::CommonTraits::ConstantFunctionBaseType</a>(0.0) {}                                               \</div>
 <div class="line">  };</div>
 <div class="ttc" id="a00011_html_a6335a2454a31fd7655db8eca53f72fc9"><div class="ttname"><a href="a00011.html#a6335a2454a31fd7655db8eca53f72fc9">Dune::Multiscale::CommonTraits::ConstantFunctionBaseType</a></div><div class="ttdeci">Stuff::Functions::Constant&lt; EntityType, FieldType, dimDomain, FieldType, dimRange &gt; ConstantFunctionBaseType</div><div class="ttdef"><b>Definition:</b> traits.hh:101</div></div>
@@ -177,7 +180,7 @@ DiffusionBase::Transfer<br class="typebreak"/>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 12 2016 11:48:52 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 11:32:41 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
