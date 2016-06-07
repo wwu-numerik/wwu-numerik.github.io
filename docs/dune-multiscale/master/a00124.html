@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>localgridsearch.cc File Reference</title>
+<title>localgridlist.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -36,20 +36,47 @@
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">localgridsearch.cc File Reference</div>  </div>
+<div class="title">localgridlist.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;config.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="a00125_source.html">localgridsearch.hh</a>&quot;</code><br/>
-<code>#include &lt;<a class="el" href="a00123_source.html">dune/multiscale/msfem/localproblems/localgridlist.hh</a>&gt;</code><br/>
-<code>#include &lt;dune/xt/common/memory.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/algorithm.hh&gt;</code><br/>
-<code>#include &lt;dune/grid/common/gridenums.hh&gt;</code><br/>
-</div></div><!-- contents -->
+<div class="textblock"><code>#include &lt;<a class="el" href="a00165_source.html">dune/multiscale/common/traits.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00142_source.html">dune/multiscale/msfem/msfem_traits.hh</a>&gt;</code><br/>
+<code>#include &lt;dune/xt/common/ranges.hh&gt;</code><br/>
+<code>#include &lt;boost/noncopyable.hpp&gt;</code><br/>
+<code>#include &lt;dune/common/exceptions.hh&gt;</code><br/>
+<code>#include &lt;dune/common/fmatrix.hh&gt;</code><br/>
+<code>#include &lt;dune/common/shared_ptr.hh&gt;</code><br/>
+<code>#include &lt;dune/stuff/grid/entity.hh&gt;</code><br/>
+<code>#include &lt;cstddef&gt;</code><br/>
+<code>#include &lt;map&gt;</code><br/>
+<code>#include &lt;memory&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
+</div>
+<p><a href="a00124_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html">Dune::Multiscale::LocalGridList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">container for cell problem subgrids  <a href="a00046.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00166"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00166.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00168"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html">Dune::Multiscale</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html">Dune::Multiscale::Problem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

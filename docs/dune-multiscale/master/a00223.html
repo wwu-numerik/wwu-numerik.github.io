@@ -34,29 +34,31 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00165.html">Dune</a></li><li class="navelem"><a class="el" href="a00167.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00027.html">DirichletProductTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00166.html">Dune</a></li><li class="navelem"><a class="el" href="a00168.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00005.html">CoarseBasisProduct</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Dune::Multiscale::DirichletProductTraits Member List</div>  </div>
+<div class="title">Dune::Multiscale::CoarseBasisProduct Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00027.html">Dune::Multiscale::DirichletProductTraits</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00005.html">Dune::Multiscale::CoarseBasisProduct</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00027.html#a9a1e7e7e65c1638e8752bfd6b2b930e8">derived_type</a> typedef</td><td class="entry"><a class="el" href="a00027.html">Dune::Multiscale::DirichletProductTraits</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00081.html#aadf354cf2f1c84767d92b5c424398fa9">dimDomain</a></td><td class="entry"><a class="el" href="a00081.html">Dune::Multiscale::ProductTraitsBase</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00081.html#ae5cbd42f7c6ba43799576cf20c1ef655">dimRange</a></td><td class="entry"><a class="el" href="a00081.html">Dune::Multiscale::ProductTraitsBase</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00081.html#aa5e03533287656cd884c48725780824f">DomainFieldType</a> typedef</td><td class="entry"><a class="el" href="a00081.html">Dune::Multiscale::ProductTraitsBase</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00081.html#a4391047dacca179991c12615c8bea8dd">EntityType</a> typedef</td><td class="entry"><a class="el" href="a00081.html">Dune::Multiscale::ProductTraitsBase</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00081.html#a85ded63cefb381a3c6317dd85b29787d">LocalfunctionTupleType</a> typedef</td><td class="entry"><a class="el" href="a00081.html">Dune::Multiscale::ProductTraitsBase</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00081.html#a07c8853d03268075d5339961de0e60bb">LocalfunctionType</a> typedef</td><td class="entry"><a class="el" href="a00081.html">Dune::Multiscale::ProductTraitsBase</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00081.html#a282589fb015d6ff129489b8985b7062b">LocalizableFunctionType</a> typedef</td><td class="entry"><a class="el" href="a00081.html">Dune::Multiscale::ProductTraitsBase</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00005.html#aded7f8e5fe9a434bc7b5f888272cee48">CoarseBasisProduct</a>(const DMP::DiffusionBase &amp;diffusion, const Multiscale::CommonTraits::BaseFunctionSetType &amp;coarse_base, const LocalizableFunctionType &amp;inducingFunction, const std::size_t coarseBaseFunc)</td><td class="entry"><a class="el" href="a00005.html">Dune::Multiscale::CoarseBasisProduct</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00005.html#a95cbf7a655f10349a6e89da3da832edd">CoarseBasisProduct</a>(const CoarseBasisProduct &amp;)=default</td><td class="entry"><a class="el" href="a00005.html">Dune::Multiscale::CoarseBasisProduct</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00005.html#a52b4ea35348673a2d46bae2aa0dd5a76">DomainFieldType</a> typedef</td><td class="entry"><a class="el" href="a00005.html">Dune::Multiscale::CoarseBasisProduct</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00005.html#ad0e33bc5cf111a54dfeb05aa27ce51cc">evaluate</a>(const typename Traits::LocalfunctionTupleType &amp;localFuncs, const Stuff::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, d, R, rT, rCT &gt; &amp;testBase, const Dune::FieldVector&lt; DomainFieldType, d &gt; &amp;localPoint, Dune::DynamicVector&lt; R &gt; &amp;ret) const </td><td class="entry"><a class="el" href="a00005.html">Dune::Multiscale::CoarseBasisProduct</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00005.html#a103137be262dde673b1fc780575b96be">evaluate</a>(const typename Traits::LocalfunctionTupleType &amp;, const Stuff::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, r, rC &gt; &amp;testBase, const Dune::FieldVector&lt; DomainFieldType, dimDomain &gt; &amp;localPoint, Dune::DynamicVector&lt; R &gt; &amp;ret) const </td><td class="entry"><a class="el" href="a00005.html">Dune::Multiscale::CoarseBasisProduct</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00005.html#a4bd4619b6517ec69894665d248df895a">localFunctions</a>(const EntityType &amp;entity) const </td><td class="entry"><a class="el" href="a00005.html">Dune::Multiscale::CoarseBasisProduct</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00005.html#ae4e1b0eddb64def50cdeb85e7f750b22">LocalizableFunctionType</a> typedef</td><td class="entry"><a class="el" href="a00005.html">Dune::Multiscale::CoarseBasisProduct</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00005.html#ad8dbecea390ad84ce5b117c42afd78fe">order</a>(const typename Traits::LocalfunctionTupleType &amp;localFuncs, const Stuff::LocalfunctionSetInterface&lt; E, DomainFieldType, d, R, rT, rCT &gt; &amp;testBase) const </td><td class="entry"><a class="el" href="a00005.html">Dune::Multiscale::CoarseBasisProduct</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00005.html#af50710b7ec8ed1ee8aa4264727ecd951">order</a>(const Stuff::LocalfunctionInterface&lt; E, DomainFieldType, d, R, rL, rCL &gt; &amp;localFunction, const Stuff::LocalfunctionSetInterface&lt; E, DomainFieldType, d, R, rT, rCT &gt; &amp;testBase) const </td><td class="entry"><a class="el" href="a00005.html">Dune::Multiscale::CoarseBasisProduct</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00005.html#a6f585d249e8caffc42947bd8855b50a5">Traits</a> typedef</td><td class="entry"><a class="el" href="a00005.html">Dune::Multiscale::CoarseBasisProduct</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

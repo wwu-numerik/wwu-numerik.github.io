@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>heterogenous.hh File Reference</title>
+<title>heterogenous.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -36,53 +36,21 @@
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">heterogenous.hh File Reference</div>  </div>
+<div class="title">heterogenous.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/common/deprecated.hh&gt;</code><br/>
-<code>#include &lt;dune/common/fvector.hh&gt;</code><br/>
-<code>#include &lt;dune/grid/common/backuprestore.hh&gt;</code><br/>
-<code>#include &lt;dune/grid/common/grid.hh&gt;</code><br/>
-<code>#include &lt;dune/grid/common/entity.hh&gt;</code><br/>
-<code>#include &lt;dune/grid/io/file/vtk/function.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/ranges.hh&gt;</code><br/>
-<code>#include &lt;dune/stuff/aliases.hh&gt;</code><br/>
-<code>#include &lt;dune/stuff/grid/search.hh&gt;</code><br/>
-<code>#include &lt;dune/gdt/spaces/cg/interface.hh&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00164_source.html">dune/multiscale/common/traits.hh</a>&gt;</code><br/>
-</div>
-<p><a href="a00120_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html">Dune::Multiscale::MsFEMProjection</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00165"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html">Dune</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00167"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html">Dune::Multiscale</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a39be9388198cce6102b2a62deb59dd62"><td class="memTemplParams" colspan="2">template&lt;class ImpTraits , size_t domainDim, size_t rangeDim&gt; </td></tr>
-<tr class="memitem:a39be9388198cce6102b2a62deb59dd62"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; typename <br class="typebreak"/>
-GDT::Spaces::CGInterface<br class="typebreak"/>
-&lt; ImpTraits, domainDim, <br class="typebreak"/>
-rangeDim, 1 &gt;::DomainType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00167.html#a39be9388198cce6102b2a62deb59dd62">Dune::Multiscale::global_evaluation_points</a> (const GDT::Spaces::CGInterface&lt; ImpTraits, domainDim, rangeDim, 1 &gt; &amp;space, const typename GDT::Spaces::CGInterface&lt; ImpTraits, domainDim, rangeDim, 1 &gt;::EntityType &amp;target_entity)</td></tr>
-<tr class="separator:a39be9388198cce6102b2a62deb59dd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-</div><!-- contents -->
+<div class="textblock"><code>#include &lt;config.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="a00121_source.html">heterogenous.hh</a>&quot;</code><br/>
+<code>#include &lt;<a class="el" href="a00126_source.html">dune/multiscale/msfem/localproblems/localgridsearch.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00134_source.html">dune/multiscale/msfem/localproblems/localsolutionmanager.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00132_source.html">dune/multiscale/msfem/localsolution_proxy.hh</a>&gt;</code><br/>
+<code>#include &lt;dune/xt/common/parallel/partitioner.hh&gt;</code><br/>
+<code>#include &lt;dune/grid/utility/partitioning/seedlist.hh&gt;</code><br/>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

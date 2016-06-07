@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>selector.cc File Reference</title>
+<title>random_permeability.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,158 +37,37 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">selector.cc File Reference</div>  </div>
+<div class="title">random_permeability.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;config.h&gt;</code><br/>
-<code>#include &lt;dune/common/exceptions.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/memory.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/misc.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/parallel/threadstorage.hh&gt;</code><br/>
-<code>#include &lt;functional&gt;</code><br/>
-<code>#include &lt;map&gt;</code><br/>
-<code>#include &lt;unordered_map&gt;</code><br/>
-<code>#include &quot;<a class="el" href="a00100_source.html">dune/multiscale/problems/base.hh</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="a00150_source.html">random.hh</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="a00153_source.html">selector.hh</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="a00155_source.html">spe10.hh</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="a00157_source.html">synthetic.hh</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="a00159_source.html">tarbert.hh</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="a00161_source.html">thirteen.hh</a>&quot;</code><br/>
-</div><table class="memberdecls">
+<div class="textblock"><code>#include &lt;exception&gt;</code><br/>
+<code>#include &lt;array&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
+<code>#include &lt;random&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;assert.h&gt;</code><br/>
+<code>#include &lt;cmath&gt;</code><br/>
+<code>#include &lt;mpi.h&gt;</code><br/>
+<code>#include &lt;fftw3-mpi.h&gt;</code><br/>
+<code>#include &lt;dune/xt/common/exceptions.hh&gt;</code><br/>
+</div>
+<p><a href="a00152_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00040.html">Dune::Intersection&lt; GridImp, IntersectionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html">Permeability&lt; DIM, X, R, COR &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for generating random scalar permeability fields on d-dimensional unit cubes with given correlation function.  <a href="a00077.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00165"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html">Dune</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html">Permeability&lt; DIM, X, R, COR &gt;::Error</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception.  <a href="a00033.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a7025b4f3e6bb79f1f6864b8eaf98519c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00152.html#a7025b4f3e6bb79f1f6864b8eaf98519c">FUNCTION_MAP</a>(ReturnType, FunctionName)</td></tr>
-<tr class="separator:a7025b4f3e6bb79f1f6864b8eaf98519c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ad60dc4c2c46c560338142e57ec986d81"><td class="memTemplParams" colspan="2">template&lt;class FunctionType &gt; </td></tr>
-<tr class="memitem:ad60dc4c2c46c560338142e57ec986d81"><td class="memTemplItemLeft" align="right" valign="top">FunctionType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00152.html#ad60dc4c2c46c560338142e57ec986d81">make_f</a> (const std::map&lt; std::string, std::function&lt; FunctionType *(Dune::MPIHelper::MPICommunicator, Dune::MPIHelper::MPICommunicator, Dune::XT::Common::Configuration)&gt;&gt; &amp;rets, std::string name, Dune::MPIHelper::MPICommunicator global, Dune::MPIHelper::MPICommunicator local, Dune::XT::Common::Configuration config_in)</td></tr>
-<tr class="separator:ad60dc4c2c46c560338142e57ec986d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a7025b4f3e6bb79f1f6864b8eaf98519c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FUNCTION_MAP</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ReturnType, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">FunctionName&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">struct </span>FunctionName##Mapper {                                                                                        \</div>
-<div class="line">    typedef std::function&lt;ReturnType*(Dune::MPIHelper::MPICommunicator, Dune::MPIHelper::MPICommunicator,              \</div>
-<div class="line">                                      Dune::XT::Common::Configuration)&gt; FF;                                            \</div>
-<div class="line">    static std::map&lt;std::string, FF&gt; mk_map() {                                                                        \</div>
-<div class="line">      std::map&lt;std::string, FF&gt; funcs;                                                                                 \</div>
-<div class="line">      Dune::XT::Common::map_emplace(funcs, <span class="stringliteral">&quot;Synthetic&quot;</span>, [](Dune::MPIHelper::MPICommunicator global,                    \</div>
-<div class="line">                                                           Dune::MPIHelper::MPICommunicator local,                     \</div>
-<div class="line">                                                           Dune::XT::Common::Configuration config_in) {                \</div>
-<div class="line">        return <span class="keyword">new</span> DMP::Synthetic::FunctionName(global, local, config_in);                                             \</div>
-<div class="line">      });                                                                                                              \</div>
-<div class="line">      Dune::XT::Common::map_emplace(funcs, <span class="stringliteral">&quot;Random&quot;</span>, [](Dune::MPIHelper::MPICommunicator global,                       \</div>
-<div class="line">                                                        Dune::MPIHelper::MPICommunicator local,                        \</div>
-<div class="line">                                                        Dune::XT::Common::Configuration config_in) {                   \</div>
-<div class="line">        return <span class="keyword">new</span> DMP::Random::FunctionName(global, local, config_in);                                                \</div>
-<div class="line">      });                                                                                                              \</div>
-<div class="line">      Dune::XT::Common::map_emplace(funcs, <span class="stringliteral">&quot;SPE10&quot;</span>, [](Dune::MPIHelper::MPICommunicator global,                        \</div>
-<div class="line">                                                       Dune::MPIHelper::MPICommunicator local,                         \</div>
-<div class="line">                                                       Dune::XT::Common::Configuration config_in) {                    \</div>
-<div class="line">        return <span class="keyword">new</span> DMP::SPE10::FunctionName(global, local, config_in);                                                 \</div>
-<div class="line">      });                                                                                                              \</div>
-<div class="line">      Dune::XT::Common::map_emplace(funcs, <span class="stringliteral">&quot;Tarbert&quot;</span>, [](Dune::MPIHelper::MPICommunicator global,                      \</div>
-<div class="line">                                                         Dune::MPIHelper::MPICommunicator local,                       \</div>
-<div class="line">                                                         Dune::XT::Common::Configuration config_in) {                  \</div>
-<div class="line">        return <span class="keyword">new</span> DMP::Tarbert::FunctionName(global, local, config_in);                                               \</div>
-<div class="line">      });                                                                                                              \</div>
-<div class="line">      return funcs;                                                                                                    \</div>
-<div class="line">    }                                                                                                                  \</div>
-<div class="line">  };                                                                                                                   \</div>
-<div class="line">  static <span class="keyword">const</span> <span class="keyword">auto</span> FunctionName##_map = FunctionName##Mapper::mk_map();</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ad60dc4c2c46c560338142e57ec986d81"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class FunctionType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">FunctionType* make_f </td>
-          <td>(</td>
-          <td class="paramtype">const std::map&lt; std::string, std::function&lt; FunctionType *(Dune::MPIHelper::MPICommunicator, Dune::MPIHelper::MPICommunicator, Dune::XT::Common::Configuration)&gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>rets</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Dune::MPIHelper::MPICommunicator&#160;</td>
-          <td class="paramname"><em>global</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Dune::MPIHelper::MPICommunicator&#160;</td>
-          <td class="paramname"><em>local</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Dune::XT::Common::Configuration&#160;</td>
-          <td class="paramname"><em>config_in</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

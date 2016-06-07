@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>main_init.cc File Reference</title>
+<title>localsolutionmanager.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,66 +32,41 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d1022a1d91715dd743bf24f90eadc81d.html">src</a></li><li class="navelem"><a class="el" href="dir_3bbf7a195b39f9546477465614ac6bad.html">dune-multiscale</a></li><li class="navelem"><a class="el" href="dir_d1df8117c67e0b882c87ee18a3f65ed2.html">dune</a></li><li class="navelem"><a class="el" href="dir_79ef15928c626faff6fdae0bfc122d63.html">multiscale</a></li><li class="navelem"><a class="el" href="dir_a306708ff84f78a702317b2c0bd38a70.html">common</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d1022a1d91715dd743bf24f90eadc81d.html">src</a></li><li class="navelem"><a class="el" href="dir_3bbf7a195b39f9546477465614ac6bad.html">dune-multiscale</a></li><li class="navelem"><a class="el" href="dir_d1df8117c67e0b882c87ee18a3f65ed2.html">dune</a></li><li class="navelem"><a class="el" href="dir_79ef15928c626faff6fdae0bfc122d63.html">multiscale</a></li><li class="navelem"><a class="el" href="dir_85cec1dc8dac846f63b81268a1b5dbf3.html">msfem</a></li><li class="navelem"><a class="el" href="dir_055e39f968022ecc7843a8ee41708fb5.html">localproblems</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">main_init.cc File Reference</div>  </div>
+<div class="title">localsolutionmanager.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;config.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="a00135_source.html">main_init.hh</a>&quot;</code><br/>
-<code>#include &lt;sys/resource.h&gt;</code><br/>
-<code>#include &lt;dune/common/parallel/mpihelper.hh&gt;</code><br/>
-<code>#include &lt;dune/common/exceptions.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/configuration.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/logging.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/signals.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/timings.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/misc.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/parallel/threadmanager.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/filesystem.hh&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00164_source.html">dune/multiscale/common/traits.hh</a>&gt;</code><br/>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a9e870b111bfb03930ae1a3c7757bcfd5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a9e870b111bfb03930ae1a3c7757bcfd5">handle_sigterm</a> (int)</td></tr>
-<tr class="separator:a9e870b111bfb03930ae1a3c7757bcfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a9e870b111bfb03930ae1a3c7757bcfd5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void handle_sigterm </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Referenced by <a class="el" href="a00167.html#a05851abc5f8cbb17eaccfdfc2097fdd5">Dune::Multiscale::init()</a>.</p>
-
+<div class="textblock"><code>#include &lt;<a class="el" href="a00165_source.html">dune/multiscale/common/traits.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00142_source.html">dune/multiscale/msfem/msfem_traits.hh</a>&gt;</code><br/>
+<code>#include &lt;cstddef&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
 </div>
-</div>
+<p><a href="a00134_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html">Dune::Multiscale::LocalSolutionManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One <a class="el" href="a00051.html" title="One LocalSolutionManager instance per coarse cell. ">LocalSolutionManager</a> instance per coarse cell.  <a href="a00051.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00166"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00166.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00168"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html">Dune::Multiscale</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

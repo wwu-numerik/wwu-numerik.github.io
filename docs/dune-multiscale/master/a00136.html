@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>minimal.cc File Reference</title>
+<title>main_init.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,92 +32,49 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d1022a1d91715dd743bf24f90eadc81d.html">src</a></li><li class="navelem"><a class="el" href="dir_3bbf7a195b39f9546477465614ac6bad.html">dune-multiscale</a></li><li class="navelem"><a class="el" href="dir_2041657b27a2080b86b80b8751f072c0.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d1022a1d91715dd743bf24f90eadc81d.html">src</a></li><li class="navelem"><a class="el" href="dir_3bbf7a195b39f9546477465614ac6bad.html">dune-multiscale</a></li><li class="navelem"><a class="el" href="dir_d1df8117c67e0b882c87ee18a3f65ed2.html">dune</a></li><li class="navelem"><a class="el" href="dir_79ef15928c626faff6fdae0bfc122d63.html">multiscale</a></li><li class="navelem"><a class="el" href="dir_a306708ff84f78a702317b2c0bd38a70.html">common</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">minimal.cc File Reference</div>  </div>
+<div class="title">main_init.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;config.h&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00135_source.html">dune/multiscale/common/main_init.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00097_source.html">dune/multiscale/fem/algorithm.hh</a>&gt;</code><br/>
-<code>#include &lt;dune/xt/common/parallel/helper.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/timings.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/parallel/threadmanager.hh&gt;</code><br/>
-<code>#include &lt;thread&gt;</code><br/>
-<code>#include &lt;tbb/blocked_range.h&gt;</code><br/>
-<code>#include &lt;vector&gt;</code><br/>
-<code>#include &lt;tbb/task_scheduler_init.h&gt;</code><br/>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">NumberPrinter</a></td></tr>
+
+<p><a href="a00136_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00180"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00180.html">tbb</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00166"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00166.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00168"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html">Dune::Multiscale</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab662741ad34aebb0732761be9d9d6dac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00136.html#ab662741ad34aebb0732761be9d9d6dac">printNumbers</a> (int n)</td></tr>
-<tr class="separator:ab662741ad34aebb0732761be9d9d6dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00136.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
-<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05851abc5f8cbb17eaccfdfc2097fdd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#a05851abc5f8cbb17eaccfdfc2097fdd5">Dune::Multiscale::init</a> (int argc, char **argv)</td></tr>
+<tr class="memdesc:a05851abc5f8cbb17eaccfdfc2097fdd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">setup code common to fem/msfem/hmm  <a href="#a05851abc5f8cbb17eaccfdfc2097fdd5">More...</a><br/></td></tr>
+<tr class="separator:a05851abc5f8cbb17eaccfdfc2097fdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4afbe69c944900a88d1ea304c518d7ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#a4afbe69c944900a88d1ea304c518d7ac">Dune::Multiscale::handle_exception</a> (const Dune::Exception &amp;exp)</td></tr>
+<tr class="separator:a4afbe69c944900a88d1ea304c518d7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d699e8b2e611e47d81062bbcaaf72a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#ad1d699e8b2e611e47d81062bbcaaf72a">Dune::Multiscale::handle_exception</a> (const std::exception &amp;exp)</td></tr>
+<tr class="separator:ad1d699e8b2e611e47d81062bbcaaf72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a052c505038575c9cc2d0dd44db5b129d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#a052c505038575c9cc2d0dd44db5b129d">Dune::Multiscale::handle_exception</a> (const tbb::tbb_exception &amp;exp)</td></tr>
+<tr class="separator:a052c505038575c9cc2d0dd44db5b129d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb550525f9e27d380df8dc93f540da67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#adb550525f9e27d380df8dc93f540da67">Dune::Multiscale::mem_usage</a> ()</td></tr>
+<tr class="separator:adb550525f9e27d380df8dc93f540da67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cbcef6c0174710b9531af4f673511d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#a1cbcef6c0174710b9531af4f673511d5">Dune::Multiscale::dump_environment</a> ()</td></tr>
+<tr class="separator:a1cbcef6c0174710b9531af4f673511d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int main </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>argv</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>TODO include base in config </p>
-
-<p>References <a class="el" href="a00167.html#a4afbe69c944900a88d1ea304c518d7ac">Dune::Multiscale::handle_exception()</a>, <a class="el" href="a00167.html#a05851abc5f8cbb17eaccfdfc2097fdd5">Dune::Multiscale::init()</a>, and <a class="el" href="a00136.html#ab662741ad34aebb0732761be9d9d6dac">printNumbers()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab662741ad34aebb0732761be9d9d6dac"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void printNumbers </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Referenced by <a class="el" href="a00136.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

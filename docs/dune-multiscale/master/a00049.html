@@ -34,23 +34,23 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00165.html">Dune</a></li><li class="navelem"><a class="el" href="a00167.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00049.html">LocalProblemOperator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00166.html">Dune</a></li><li class="navelem"><a class="el" href="a00168.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00049.html">LocalProblemOperator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00230.html">List of all members</a>  </div>
+<a href="a00231.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Dune::Multiscale::LocalProblemOperator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00127_source.html">dune/multiscale/msfem/localproblems/localoperator.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00128_source.html">dune/multiscale/msfem/localproblems/localoperator.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a96f4f5a34858bd13a1a8fa32d76b0536"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#a96f4f5a34858bd13a1a8fa32d76b0536">LocalProblemOperator</a> (const <a class="el" href="a00080.html">DMP::ProblemContainer</a> &amp;<a class="el" href="a00114.html#aa4fc2c6f71e2e8fd8651edec6648be34">problem</a>, const <a class="el" href="a00011.html#a982e48095c85ff696625b4f7c3d9a601">CommonTraits::SpaceType</a> &amp;coarse_space, const <a class="el" href="a00064.html#a9a9407ada6db8696cb1bbf99820dd4cd">MsFEMTraits::LocalSpaceType</a> &amp;subDiscreteFunctionSpace)</td></tr>
+<tr class="memitem:a96f4f5a34858bd13a1a8fa32d76b0536"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#a96f4f5a34858bd13a1a8fa32d76b0536">LocalProblemOperator</a> (const <a class="el" href="a00080.html">DMP::ProblemContainer</a> &amp;<a class="el" href="a00115.html#aa4fc2c6f71e2e8fd8651edec6648be34">problem</a>, const <a class="el" href="a00011.html#a982e48095c85ff696625b4f7c3d9a601">CommonTraits::SpaceType</a> &amp;coarse_space, const <a class="el" href="a00064.html#a9a9407ada6db8696cb1bbf99820dd4cd">MsFEMTraits::LocalSpaceType</a> &amp;subDiscreteFunctionSpace)</td></tr>
 <tr class="separator:a96f4f5a34858bd13a1a8fa32d76b0536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03453be88a70c372aa1685d4b2bb1c80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html#a03453be88a70c372aa1685d4b2bb1c80">assemble_all_local_rhs</a> (const <a class="el" href="a00064.html#ad7fea520ee2eaa0561e18b5d892b7dd7">MsFEMTraits::CoarseEntityType</a> &amp;coarseEntity, <a class="el" href="a00064.html#a0e9e89d76f25cc126fd8778c04c0af8f">MsFEMTraits::LocalSolutionVectorType</a> &amp;allLocalRHS)</td></tr>
 <tr class="separator:a03453be88a70c372aa1685d4b2bb1c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,18 +152,18 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>The vector allLocalRHS is assumed to have the correct size and contain pointers to all local rhs functions. The discrete functions in allLocalRHS will be cleared in this function. </dd></dl>
 
-<p>References <a class="el" href="a00080.html#a40f9ee856bb7e52b330629affb6184f4">Dune::Multiscale::Problem::ProblemContainer::config()</a>, <a class="el" href="a00080.html#a88f0442493db44b34aff5d8553bf76f3">Dune::Multiscale::Problem::ProblemContainer::getDiffusion()</a>, <a class="el" href="a00080.html#ab27a7f969915c7ccb3fedc412f2a259c">Dune::Multiscale::Problem::ProblemContainer::getNeumannData()</a>, and <a class="el" href="a00175.html#ac80d9ed0f6798ca354ea7c9cfa0b8048">Dune::Stuff::Grid::is_simplex_grid()</a>.</p>
+<p>References <a class="el" href="a00080.html#a40f9ee856bb7e52b330629affb6184f4">Dune::Multiscale::Problem::ProblemContainer::config()</a>, <a class="el" href="a00080.html#a88f0442493db44b34aff5d8553bf76f3">Dune::Multiscale::Problem::ProblemContainer::getDiffusion()</a>, <a class="el" href="a00080.html#ab27a7f969915c7ccb3fedc412f2a259c">Dune::Multiscale::Problem::ProblemContainer::getNeumannData()</a>, and <a class="el" href="a00176.html#ac80d9ed0f6798ca354ea7c9cfa0b8048">Dune::Stuff::Grid::is_simplex_grid()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="a00127_source.html">localoperator.hh</a></li>
-<li><a class="el" href="a00126.html">localoperator.cc</a></li>
+<li><a class="el" href="a00128_source.html">localoperator.hh</a></li>
+<li><a class="el" href="a00127.html">localoperator.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

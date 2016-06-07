@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>random.hh File Reference</title>
+<title>random.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,99 +37,42 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">random.hh File Reference</div>  </div>
+<div class="title">random.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00100_source.html">dune/multiscale/problems/base.hh</a>&gt;</code><br/>
+<div class="textblock"><code>#include &lt;config.h&gt;</code><br/>
+<code>#include &lt;dune/common/exceptions.hh&gt;</code><br/>
+<code>#include &lt;dune/common/parallel/mpihelper.hh&gt;</code><br/>
+<code>#include &lt;dune/common/parallel/collectivecommunication.hh&gt;</code><br/>
+<code>#include &lt;dune/xt/common/validation.hh&gt;</code><br/>
+<code>#include &lt;dune/xt/common/float_cmp.hh&gt;</code><br/>
 <code>#include &lt;dune/stuff/grid/boundaryinfo.hh&gt;</code><br/>
-<code>#include &lt;memory&gt;</code><br/>
-<code>#include &lt;string&gt;</code><br/>
-<code>#include &quot;<a class="el" href="a00164_source.html">dune/multiscale/common/traits.hh</a>&quot;</code><br/>
-</div>
-<p><a href="a00150_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html">Permeability&lt; DIM, X, R, COR &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for generating random scalar permeability fields on d-dimensional unit cubes with given correlation function.  <a href="a00077.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html">Dune::Multiscale::Problem::Random::Correlation</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html">Dune::Multiscale::Problem::Random::ModelProblemData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html">Dune::Multiscale::Problem::Random::Diffusion</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html">Dune::Multiscale::Problem::Random::DirichletData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html">Dune::Multiscale::Problem::Random::NeumannData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<code>#include &lt;dune/xt/common/timings.hh&gt;</code><br/>
+<code>#include &lt;dune/xt/common/configuration.hh&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00154_source.html">dune/multiscale/problems/selector.hh</a>&gt;</code><br/>
+<code>#include &lt;math.h&gt;</code><br/>
+<code>#include &lt;sstream&gt;</code><br/>
+<code>#include &quot;<a class="el" href="a00101_source.html">dune/multiscale/problems/base.hh</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00151_source.html">random.hh</a>&quot;</code><br/>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00165"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html">Dune</a></td></tr>
+<tr class="memitem:a00166"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00166.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00167"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html">Dune::Multiscale</a></td></tr>
+<tr class="memitem:a00168"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html">Dune::Multiscale</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00168"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html">Dune::Multiscale::Problem</a></td></tr>
+<tr class="memitem:a00169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html">Dune::Multiscale::Problem</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html">Dune::Multiscale::Problem::Random</a></td></tr>
-<tr class="memdesc:a00169"><td class="mdescLeft">&#160;</td><td class="mdescRight">---------&mdash; Elliptic <a class="el" href="a00168.html">Problem</a> 9 ----------------&mdash; <br/></td></tr>
+<tr class="memitem:a00170"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00170.html">Dune::Multiscale::Problem::Random</a></td></tr>
+<tr class="memdesc:a00170"><td class="mdescLeft">&#160;</td><td class="mdescRight">---------&mdash; Elliptic <a class="el" href="a00169.html">Problem</a> 9 ----------------&mdash; <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:acd42770aecb025cfac170d4d3ace4544"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00150.html#acd42770aecb025cfac170d4d3ace4544">PURE</a></td></tr>
-<tr class="separator:acd42770aecb025cfac170d4d3ace4544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eb14cc432874ddacd1934791dbe12a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00150.html#a1eb14cc432874ddacd1934791dbe12a3">HOT</a></td></tr>
-<tr class="separator:a1eb14cc432874ddacd1934791dbe12a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1dec568e79152c892dcf63f445cbd7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00150.html#aa1dec568e79152c892dcf63f445cbd7a">ALWAYS_INLINE</a>&#160;&#160;&#160;inline</td></tr>
-<tr class="separator:aa1dec568e79152c892dcf63f445cbd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="aa1dec568e79152c892dcf63f445cbd7a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ALWAYS_INLINE&#160;&#160;&#160;inline</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1eb14cc432874ddacd1934791dbe12a3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HOT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acd42770aecb025cfac170d4d3ace4544"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PURE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

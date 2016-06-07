@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>algorithm.cc File Reference</title>
+<title>Dune::Multiscale::Problem::ZeroNeumannData Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,59 +20,58 @@
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
     </ul>
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d1022a1d91715dd743bf24f90eadc81d.html">src</a></li><li class="navelem"><a class="el" href="dir_3bbf7a195b39f9546477465614ac6bad.html">dune-multiscale</a></li><li class="navelem"><a class="el" href="dir_d1df8117c67e0b882c87ee18a3f65ed2.html">dune</a></li><li class="navelem"><a class="el" href="dir_79ef15928c626faff6fdae0bfc122d63.html">multiscale</a></li><li class="navelem"><a class="el" href="dir_ce85bfe15e2d8fe10559ad7cec140488.html">fem</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00166.html">Dune</a></li><li class="navelem"><a class="el" href="a00168.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00169.html">Problem</a></li><li class="navelem"><a class="el" href="a00095.html">ZeroNeumannData</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00246.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">fem/algorithm.cc File Reference</div>  </div>
+<div class="title">Dune::Multiscale::Problem::ZeroNeumannData Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;config.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="a00097_source.html">algorithm.hh</a>&quot;</code><br/>
-<code>#include &lt;string&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00113_source.html">dune/multiscale/common/error_calc.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00118_source.html">dune/multiscale/common/grid_creation.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00116_source.html">dune/multiscale/msfem/fem_solver.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00144_source.html">dune/multiscale/tools/misc/outputparameter.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00100_source.html">dune/multiscale/problems/base.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00153_source.html">dune/multiscale/problems/selector.hh</a>&gt;</code><br/>
-<code>#include &lt;dune/xt/common/logging.hh&gt;</code><br/>
-<code>#include &lt;dune/xt/common/configuration.hh&gt;</code><br/>
-<code>#include &lt;dune/stuff/grid/provider.hh&gt;</code><br/>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00165"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html">Dune</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00167"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html">Dune::Multiscale</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a05b769b9d37c91de39f53dec51b58339"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html#a05b769b9d37c91de39f53dec51b58339">Dune::Multiscale::cgfem_algorithm</a> ()</td></tr>
-<tr class="memdesc:a05b769b9d37c91de39f53dec51b58339"><td class="mdescLeft">&#160;</td><td class="mdescRight">the main FEM computation  <a href="#a05b769b9d37c91de39f53dec51b58339">More...</a><br/></td></tr>
-<tr class="separator:a05b769b9d37c91de39f53dec51b58339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+
+<p><code>#include &lt;<a class="el" href="a00101_source.html">dune/multiscale/problems/base.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::Multiscale::Problem::ZeroNeumannData:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00095.png" usemap="#Dune::Multiscale::Problem::ZeroNeumannData_map" alt=""/>
+  <map id="Dune::Multiscale::Problem::ZeroNeumannData_map" name="Dune::Multiscale::Problem::ZeroNeumannData_map">
+<area href="a00074.html" alt="Dune::Multiscale::Problem::NeumannDataBase" shape="rect" coords="0,56,294,80"/>
+<area href="a00072.html" alt="Dune::Multiscale::Problem::Thirteen::NeumannData" shape="rect" coords="0,168,294,192"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ga5a69e01fe296eee59f0dedfff2d2b865"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#ga5a69e01fe296eee59f0dedfff2d2b865">evaluate</a> (const <a class="el" href="a00169.html#afa0b8aa9161f2875f3cd5537634fbdd8">DomainType</a> &amp;, <a class="el" href="a00169.html#a38ca9c3851838328b05ae6d7f85bf59c">RangeType</a> &amp;y) const final</td></tr>
+<tr class="separator:ga5a69e01fe296eee59f0dedfff2d2b865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa037821b8ec76b91182b3439ae4233d4"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#gaa037821b8ec76b91182b3439ae4233d4">order</a> () const </td></tr>
+<tr class="separator:gaa037821b8ec76b91182b3439ae4233d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00101_source.html">base.hh</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

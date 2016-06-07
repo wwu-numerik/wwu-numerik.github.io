@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>proxygridview.cc File Reference</title>
+<title>print_info.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,31 +32,48 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d1022a1d91715dd743bf24f90eadc81d.html">src</a></li><li class="navelem"><a class="el" href="dir_3bbf7a195b39f9546477465614ac6bad.html">dune-multiscale</a></li><li class="navelem"><a class="el" href="dir_d1df8117c67e0b882c87ee18a3f65ed2.html">dune</a></li><li class="navelem"><a class="el" href="dir_79ef15928c626faff6fdae0bfc122d63.html">multiscale</a></li><li class="navelem"><a class="el" href="dir_85cec1dc8dac846f63b81268a1b5dbf3.html">msfem</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d1022a1d91715dd743bf24f90eadc81d.html">src</a></li><li class="navelem"><a class="el" href="dir_3bbf7a195b39f9546477465614ac6bad.html">dune-multiscale</a></li><li class="navelem"><a class="el" href="dir_d1df8117c67e0b882c87ee18a3f65ed2.html">dune</a></li><li class="navelem"><a class="el" href="dir_79ef15928c626faff6fdae0bfc122d63.html">multiscale</a></li><li class="navelem"><a class="el" href="dir_ce85bfe15e2d8fe10559ad7cec140488.html">fem</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">proxygridview.cc File Reference</div>  </div>
+<div class="title">print_info.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;config.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="a00148_source.html">proxygridview.hh</a>&quot;</code><br/>
-<code>#include &lt;<a class="el" href="a00123_source.html">dune/multiscale/msfem/localproblems/localgridlist.hh</a>&gt;</code><br/>
-</div><table class="memberdecls">
+<div class="textblock"><code>#include &lt;<a class="el" href="a00165_source.html">dune/multiscale/common/traits.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00101_source.html">dune/multiscale/problems/base.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00154_source.html">dune/multiscale/problems/selector.hh</a>&gt;</code><br/>
+<code>#include &lt;dune/xt/common/ranges.hh&gt;</code><br/>
+<code>#include &lt;iosfwd&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+</div>
+<p><a href="a00147_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00165"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html">Dune</a></td></tr>
+<tr class="memitem:a00166"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00166.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00167"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html">Dune::Multiscale</a></td></tr>
+<tr class="memitem:a00168"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html">Dune::Multiscale</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6a586b2a3186228ec426514986cb9460"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#a6a586b2a3186228ec426514986cb9460">Dune::Multiscale::print_info</a> (const Problem::ProblemContainer &amp;<a class="el" href="a00115.html#aa4fc2c6f71e2e8fd8651edec6648be34">problem</a>, std::ostream &amp;out)</td></tr>
+<tr class="memdesc:a6a586b2a3186228ec426514986cb9460"><td class="mdescLeft">&#160;</td><td class="mdescRight">outputs <a class="el" href="a00169.html">Problem</a> info to output stream  <a href="#a6a586b2a3186228ec426514986cb9460">More...</a><br/></td></tr>
+<tr class="separator:a6a586b2a3186228ec426514986cb9460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a822c0432a76281332e3f5ec5077ce18a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#a822c0432a76281332e3f5ec5077ce18a">Dune::Multiscale::write_discrete_function</a> (const <a class="el" href="a00080.html">DMP::ProblemContainer</a> &amp;<a class="el" href="a00115.html#aa4fc2c6f71e2e8fd8651edec6648be34">problem</a>, CommonTraits::DiscreteFunction_ptr &amp;discrete_solution, const std::string prefix)</td></tr>
+<tr class="memdesc:a822c0432a76281332e3f5ec5077ce18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">write discrete function VTK Output  <a href="#a822c0432a76281332e3f5ec5077ce18a">More...</a><br/></td></tr>
+<tr class="separator:a822c0432a76281332e3f5ec5077ce18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa653d01dece010f74d6a5feb83fac3c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#aa653d01dece010f74d6a5feb83fac3c7">Dune::Multiscale::write_discrete_function</a> (CommonTraits::DiscreteFunctionType &amp;discrete_solution, const std::string prefix)</td></tr>
+<tr class="separator:aa653d01dece010f74d6a5feb83fac3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

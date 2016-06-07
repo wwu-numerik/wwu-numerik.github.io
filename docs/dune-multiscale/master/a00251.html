@@ -34,25 +34,30 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00165.html">Dune</a></li><li class="navelem"><a class="el" href="a00167.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00168.html">Problem</a></li><li class="navelem"><a class="el" href="a00169.html">Random</a></li><li class="navelem"><a class="el" href="a00020.html">DirichletData</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00166.html">Dune</a></li><li class="navelem"><a class="el" href="a00168.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00169.html">Problem</a></li><li class="navelem"><a class="el" href="a00170.html">Random</a></li><li class="navelem"><a class="el" href="a00014.html">Diffusion</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Dune::Multiscale::Problem::Random::DirichletData Member List</div>  </div>
+<div class="title">Dune::Multiscale::Problem::Random::Diffusion Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00020.html">Dune::Multiscale::Problem::Random::DirichletData</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00014.html">Dune::Multiscale::Problem::Random::Diffusion</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00020.html#adc85584fc328d31be1ec04744843d68b">DirichletData</a>(MPIHelper::MPICommunicator, MPIHelper::MPICommunicator, Dune::XT::Common::Configuration)</td><td class="entry"><a class="el" href="a00020.html">Dune::Multiscale::Problem::Random::DirichletData</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00020.html#a4fcdbedb82722014724aa50e9cdfd0eb">evaluate</a>(const DomainType &amp;x, RangeType &amp;y) const finaloverride</td><td class="entry"><a class="el" href="a00020.html">Dune::Multiscale::Problem::Random::DirichletData</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00180.html#ga1d8010e3c1f49b47b3e2ccbcd6867750">order</a>() const </td><td class="entry"><a class="el" href="a00025.html">Dune::Multiscale::Problem::DirichletDataBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00020.html#a1fe809e562a387974fe62e003053e3bc">~DirichletData</a>()</td><td class="entry"><a class="el" href="a00020.html">Dune::Multiscale::Problem::Random::DirichletData</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00014.html#a3fd861a512395da75d0158b79a2a19a2">Diffusion</a>(MPIHelper::MPICommunicator global, MPIHelper::MPICommunicator local, Dune::XT::Common::Configuration config_in)</td><td class="entry"><a class="el" href="a00014.html">Dune::Multiscale::Problem::Random::Diffusion</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00014.html#a61b66f8e9f7ecb6878d6baaa71de2a76">diffusiveFlux</a>(const DomainType &amp;x, const Problem::JacobianRangeType &amp;direction, Problem::JacobianRangeType &amp;flux) const finaloverride</td><td class="entry"><a class="el" href="a00014.html">Dune::Multiscale::Problem::Random::Diffusion</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00014.html#a0800597c321a91c55441d00f80fab9b3">evaluate</a>(const DomainType &amp;x, DiffusionBase::RangeType &amp;y) const finaloverride</td><td class="entry"><a class="el" href="a00014.html">Dune::Multiscale::Problem::Random::Diffusion</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00181.html#ga70d8a8c0593393ef2552496957308b7f">Dune::Multiscale::Problem::DiffusionBase::evaluate</a>(const DomainType &amp;x, CommonTraits::DiffusionFunctionBaseType::RangeType &amp;y) const =0</td><td class="entry"><a class="el" href="a00019.html">Dune::Multiscale::Problem::DiffusionBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00014.html#a821152f32989d27541b089a8618f788c">init</a>(const DMP::ProblemContainer &amp;problem, MPIHelper::MPICommunicator global, MPIHelper::MPICommunicator local) finaloverride</td><td class="entry"><a class="el" href="a00014.html">Dune::Multiscale::Problem::Random::Diffusion</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00181.html#gabd31143a18cb2312b3ae6d79e5d75b23">jacobianDiffusiveFlux</a>(const DomainType &amp;x, const Problem::JacobianRangeType &amp;, const Problem::JacobianRangeType &amp;direction_gradient, Problem::JacobianRangeType &amp;flux) const </td><td class="entry"><a class="el" href="a00019.html">Dune::Multiscale::Problem::DiffusionBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00014.html#a2ce9cad214b031a61e1dc042ecc7357c">order</a>() const finaloverride</td><td class="entry"><a class="el" href="a00014.html">Dune::Multiscale::Problem::Random::Diffusion</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00014.html#aaceb0169e87503acc1982b2ee6bcc313">prepare_new_evaluation</a>() finaloverride</td><td class="entry"><a class="el" href="a00014.html">Dune::Multiscale::Problem::Random::Diffusion</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00181.html#ga00dfc580b80e3c45b9d2c784686df76f">~DiffusionBase</a>()</td><td class="entry"><a class="el" href="a00019.html">Dune::Multiscale::Problem::DiffusionBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

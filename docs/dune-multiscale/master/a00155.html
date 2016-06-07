@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>spe10.hh File Reference</title>
+<title>spe10.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,48 +37,65 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">spe10.hh File Reference</div>  </div>
+<div class="title">spe10.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00100_source.html">dune/multiscale/problems/base.hh</a>&gt;</code><br/>
-<code>#include &lt;string&gt;</code><br/>
-<code>#include &lt;vector&gt;</code><br/>
-<code>#include &quot;<a class="el" href="a00164_source.html">dune/multiscale/common/traits.hh</a>&quot;</code><br/>
-</div>
-<p><a href="a00155_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html">Dune::Multiscale::Problem::SPE10::ModelProblemData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html">Dune::Multiscale::Problem::SPE10::Source</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html">Dune::Multiscale::Problem::SPE10::Diffusion</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html">Dune::Multiscale::Problem::SPE10::DirichletData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">Dune::Multiscale::Problem::SPE10::NeumannData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<div class="textblock"><code>#include &lt;config.h&gt;</code><br/>
+<code>#include &lt;assert.h&gt;</code><br/>
+<code>#include &lt;dune/common/exceptions.hh&gt;</code><br/>
+<code>#include &lt;dune/xt/common/logging.hh&gt;</code><br/>
+<code>#include &lt;dune/xt/common/validation.hh&gt;</code><br/>
+<code>#include &lt;dune/xt/common/configuration.hh&gt;</code><br/>
+<code>#include &lt;sstream&gt;</code><br/>
+<code>#include &quot;<a class="el" href="a00101_source.html">dune/multiscale/problems/base.hh</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00156_source.html">spe10.hh</a>&quot;</code><br/>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00165"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html">Dune</a></td></tr>
+<tr class="memitem:a00166"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00166.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00167"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html">Dune::Multiscale</a></td></tr>
+<tr class="memitem:a00168"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html">Dune::Multiscale</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00168"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html">Dune::Multiscale::Problem</a></td></tr>
+<tr class="memitem:a00169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html">Dune::Multiscale::Problem</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00170"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00170.html">Dune::Multiscale::Problem::SPE10</a></td></tr>
-<tr class="memdesc:a00170"><td class="mdescLeft">&#160;</td><td class="mdescRight">---------&mdash; <a class="el" href="a00170.html" title="---------— SPE10 Problem ----------------— ">SPE10</a> <a class="el" href="a00168.html">Problem</a> ----------------&mdash; <br/></td></tr>
+<tr class="memitem:a00171"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html">Dune::Multiscale::Problem::SPE10</a></td></tr>
+<tr class="memdesc:a00171"><td class="mdescLeft">&#160;</td><td class="mdescRight">---------&mdash; <a class="el" href="a00171.html" title="---------— SPE10 Problem ----------------— ">SPE10</a> <a class="el" href="a00169.html">Problem</a> ----------------&mdash; <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad31e88210a4c10de98d98f348c1fdaa8"><td class="memItemLeft" align="right" valign="top">Dune::XT::Common::Configuration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#ad31e88210a4c10de98d98f348c1fdaa8">Dune::Multiscale::Problem::SPE10::default_config</a> (const std::string sub_name=&quot;&quot;)</td></tr>
+<tr class="separator:ad31e88210a4c10de98d98f348c1fdaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:abeef662e39c527b15ae82ab5615d0597"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#abeef662e39c527b15ae82ab5615d0597">Dune::Multiscale::Problem::SPE10::model2_filename</a> = &quot;spe10_permeability.dat&quot;</td></tr>
+<tr class="separator:abeef662e39c527b15ae82ab5615d0597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb61a92af9b65f5f123fd44cc73d2d1"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#a6fb61a92af9b65f5f123fd44cc73d2d1">Dune::Multiscale::Problem::SPE10::model2_x_elements</a> = 60</td></tr>
+<tr class="separator:a6fb61a92af9b65f5f123fd44cc73d2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4ae566321aa93c40f5673f2af4d355"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#a4f4ae566321aa93c40f5673f2af4d355">Dune::Multiscale::Problem::SPE10::model2_y_elements</a> = 220</td></tr>
+<tr class="separator:a4f4ae566321aa93c40f5673f2af4d355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e53ce87f0175a5091a8bdb6839bf540"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#a2e53ce87f0175a5091a8bdb6839bf540">Dune::Multiscale::Problem::SPE10::model2_z_elements</a> = 85</td></tr>
+<tr class="separator:a2e53ce87f0175a5091a8bdb6839bf540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadfe4c22e564d4bb1aff9e7cbd4facef"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#aadfe4c22e564d4bb1aff9e7cbd4facef">Dune::Multiscale::Problem::SPE10::model_2_length_x</a> = 365.76</td></tr>
+<tr class="separator:aadfe4c22e564d4bb1aff9e7cbd4facef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecda60bc9e776d1a7f17bbdd0a0cf706"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#aecda60bc9e776d1a7f17bbdd0a0cf706">Dune::Multiscale::Problem::SPE10::model_2_length_y</a> = 670.56</td></tr>
+<tr class="separator:aecda60bc9e776d1a7f17bbdd0a0cf706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a31793f639b1419175e1d711a7c7feb"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#a6a31793f639b1419175e1d711a7c7feb">Dune::Multiscale::Problem::SPE10::model_2_length_z</a> = 51.816</td></tr>
+<tr class="separator:a6a31793f639b1419175e1d711a7c7feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2416b6c986c8556f179d79f395350e6"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#aa2416b6c986c8556f179d79f395350e6">Dune::Multiscale::Problem::SPE10::model_2_min_value</a> = 6.65e-8</td></tr>
+<tr class="separator:aa2416b6c986c8556f179d79f395350e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8ceb3bbb1071926be354c8558f81b7"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html#aef8ceb3bbb1071926be354c8558f81b7">Dune::Multiscale::Problem::SPE10::model_2_max_value</a> = 20000</td></tr>
+<tr class="separator:aef8ceb3bbb1071926be354c8558f81b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

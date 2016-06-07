@@ -34,31 +34,31 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00165.html">Dune</a></li><li class="navelem"><a class="el" href="a00167.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00031.html">Elliptic_FEM_Solver</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00166.html">Dune</a></li><li class="navelem"><a class="el" href="a00168.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00031.html">Elliptic_FEM_Solver</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00226.html">List of all members</a>  </div>
+<a href="a00227.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Dune::Multiscale::Elliptic_FEM_Solver Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00116_source.html">dune/multiscale/msfem/fem_solver.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00117_source.html">dune/multiscale/msfem/fem_solver.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e1800d392d543541d660da0b25ea618"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a3e1800d392d543541d660da0b25ea618">Elliptic_FEM_Solver</a> (const <a class="el" href="a00080.html">DMP::ProblemContainer</a> &amp;<a class="el" href="a00114.html#aa4fc2c6f71e2e8fd8651edec6648be34">problem</a>)</td></tr>
+<tr class="memitem:a3e1800d392d543541d660da0b25ea618"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a3e1800d392d543541d660da0b25ea618">Elliptic_FEM_Solver</a> (const <a class="el" href="a00080.html">DMP::ProblemContainer</a> &amp;<a class="el" href="a00115.html#aa4fc2c6f71e2e8fd8651edec6648be34">problem</a>)</td></tr>
 <tr class="separator:a3e1800d392d543541d660da0b25ea618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3626737362fe21227a7aa7743db5ce6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#af3626737362fe21227a7aa7743db5ce6">Elliptic_FEM_Solver</a> (const <a class="el" href="a00080.html">DMP::ProblemContainer</a> &amp;<a class="el" href="a00114.html#aa4fc2c6f71e2e8fd8651edec6648be34">problem</a>, GridPtrType grid)</td></tr>
+<tr class="memitem:af3626737362fe21227a7aa7743db5ce6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#af3626737362fe21227a7aa7743db5ce6">Elliptic_FEM_Solver</a> (const <a class="el" href="a00080.html">DMP::ProblemContainer</a> &amp;<a class="el" href="a00115.html#aa4fc2c6f71e2e8fd8651edec6648be34">problem</a>, GridPtrType grid)</td></tr>
 <tr class="separator:af3626737362fe21227a7aa7743db5ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adee4c41f2c4eee47aa423428a1d28b60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00011.html#a5c24830e14e3a68b38bf9c7a7f9e058e">CommonTraits::ConstDiscreteFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#adee4c41f2c4eee47aa423428a1d28b60">solve</a> ()</td></tr>
 <tr class="separator:adee4c41f2c4eee47aa423428a1d28b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="todo"><dt><b><a class="el" href="a00185.html#_todo000004">Todo:</a></b></dt><dd>docme </dd></dl>
+<div class="textblock"><dl class="todo"><dt><b><a class="el" href="a00186.html#_todo000004">Todo:</a></b></dt><dd>docme </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3e1800d392d543541d660da0b25ea618"></a>
 <div class="memitem">
@@ -119,18 +119,18 @@ Public Member Functions</h2></td></tr>
 <li>∇ (<a class="el" href="a00001.html">A</a>(x,∇u)) + b ∇u + c u = f - divG then: <a class="el" href="a00001.html">A</a> &ndash;&gt; diffusion operator ('DiffusionOperatorType') b &ndash;&gt; advective part ('AdvectionTermType') c &ndash;&gt; reaction part ('ReactionTermType') f &ndash;&gt; 'first' source term, scalar ('SourceTermType') </li>
 </ul>
 
-<p>Referenced by <a class="el" href="a00167.html#a05b769b9d37c91de39f53dec51b58339">Dune::Multiscale::cgfem_algorithm()</a>, and <a class="el" href="a00034.html#a9acab61712359e87318894e4856aed4b">Dune::Multiscale::ErrorCalculator::print()</a>.</p>
+<p>Referenced by <a class="el" href="a00168.html#a05b769b9d37c91de39f53dec51b58339">Dune::Multiscale::cgfem_algorithm()</a>, and <a class="el" href="a00034.html#a9acab61712359e87318894e4856aed4b">Dune::Multiscale::ErrorCalculator::print()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="a00116_source.html">fem_solver.hh</a></li>
-<li><a class="el" href="a00115.html">fem_solver.cc</a></li>
+<li><a class="el" href="a00117_source.html">fem_solver.hh</a></li>
+<li><a class="el" href="a00116.html">fem_solver.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

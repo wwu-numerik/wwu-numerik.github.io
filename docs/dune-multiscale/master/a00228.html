@@ -34,27 +34,30 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00165.html">Dune</a></li><li class="navelem"><a class="el" href="a00167.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00047.html">LocalGridSearch</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00166.html">Dune</a></li><li class="navelem"><a class="el" href="a00168.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00046.html">LocalGridList</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Dune::Multiscale::LocalGridSearch Member List</div>  </div>
+<div class="title">Dune::Multiscale::LocalGridList Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00047.html">Dune::Multiscale::LocalGridSearch</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00046.html">Dune::Multiscale::LocalGridList</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00047.html#a32b0e38ef2df0599ee2141705582685c">covers_strict</a>(const CommonTraits::SpaceType::EntityType &amp;coarse_entity, const PointIterator first, const PointIterator last)</td><td class="entry"><a class="el" href="a00047.html">Dune::Multiscale::LocalGridSearch</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00047.html#a8f95954a0630d742faed2d2708194a2c">current_coarse_pointer</a>() const </td><td class="entry"><a class="el" href="a00047.html">Dune::Multiscale::LocalGridSearch</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00047.html#a5dd960fefa0c64411be672799d5a43b8">EntityVectorType</a> typedef</td><td class="entry"><a class="el" href="a00047.html">Dune::Multiscale::LocalGridSearch</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00047.html#a18d91a827dd47c92707e4f12a20e94fb">LocalGridSearch</a>(const CommonTraits::SpaceType &amp;space, const LocalGridList &amp;gridlist)</td><td class="entry"><a class="el" href="a00047.html">Dune::Multiscale::LocalGridSearch</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00047.html#a69534fb1a6f8cd02fc7a4037496aa05e">LocalGridSearch</a>(const LocalGridSearch &amp;other)</td><td class="entry"><a class="el" href="a00047.html">Dune::Multiscale::LocalGridSearch</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00047.html#ae567e93a45d6d41f6162ec9cfa5988ec">operator()</a>(const PointContainerType &amp;points)</td><td class="entry"><a class="el" href="a00047.html">Dune::Multiscale::LocalGridSearch</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00046.html#aef8933b27fad7dbd78556c7bcf4c061e">covers</a>(const MsFEMTraits::CoarseEntityType &amp;coarse_entity, const MsFEMTraits::LocalEntityType &amp;local_entity)</td><td class="entry"><a class="el" href="a00046.html">Dune::Multiscale::LocalGridList</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00046.html#a75f009082256bba3019dac679edbffee">covers_strict</a>(const MsFEMTraits::CoarseEntityType &amp;coarse_entity, const MsFEMTraits::LocalEntityType &amp;local_entity)</td><td class="entry"><a class="el" href="a00046.html">Dune::Multiscale::LocalGridList</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00046.html#a2210f0e3cc9494f6c332e5f22f5fd1c9">covers_strict</a>(const MsFEMTraits::CoarseEntityType &amp;coarse_entity, const Dune::Geometry&lt; CommonTraits::world_dim, CommonTraits::world_dim, GridImp, GeometryImp &gt; &amp;local_geometry)</td><td class="entry"><a class="el" href="a00046.html">Dune::Multiscale::LocalGridList</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00046.html#a2c7b9958e76a8becc453cec25008c26a">getSubGrid</a>(IndexType i)</td><td class="entry"><a class="el" href="a00046.html">Dune::Multiscale::LocalGridList</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00046.html#a64b495d8e12b2c7b12ce65caabbd0464">getSubGrid</a>(IndexType i) const </td><td class="entry"><a class="el" href="a00046.html">Dune::Multiscale::LocalGridList</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00046.html#a5b3105c609fa97db90af6da5290118b2">getSubGrid</a>(const MsFEMTraits::CoarseEntityType &amp;entity) const </td><td class="entry"><a class="el" href="a00046.html">Dune::Multiscale::LocalGridList</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00046.html#a47365dc5ff145d1cd2ce83c8a390815b">getSubGrid</a>(const MsFEMTraits::CoarseEntityType &amp;entity)</td><td class="entry"><a class="el" href="a00046.html">Dune::Multiscale::LocalGridList</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00046.html#a4d001f1ab64b1895f899b943d31fd667">LocalGridList</a>(const Dune::Multiscale::Problem::ProblemContainer &amp;problem, const CommonTraits::SpaceType &amp;coarseSpace)</td><td class="entry"><a class="el" href="a00046.html">Dune::Multiscale::LocalGridList</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00046.html#a7ae5be2fdceb9fcf22a225a288d112b5">size</a>() const </td><td class="entry"><a class="el" href="a00046.html">Dune::Multiscale::LocalGridList</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 16:29:25 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 16:50:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
