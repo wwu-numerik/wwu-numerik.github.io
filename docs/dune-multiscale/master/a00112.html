@@ -68,6 +68,7 @@
 <code>#include &lt;<a class="el" href="a00144_source.html">dune/multiscale/tools/misc/outputparameter.hh</a>&gt;</code><br/>
 <code>#include &lt;dune/xt/common/parallel/partitioner.hh&gt;</code><br/>
 <code>#include &lt;dune/grid/utility/partitioning/seedlist.hh&gt;</code><br/>
+<code>#include &lt;dune/stuff/grid/information.hh&gt;</code><br/>
 <code>#include &lt;dune/xt/common/filesystem.hh&gt;</code><br/>
 <code>#include &lt;dune/xt/common/configuration.hh&gt;</code><br/>
 <code>#include &lt;<a class="el" href="a00120_source.html">dune/multiscale/common/heterogenous.hh</a>&gt;</code><br/>
@@ -112,6 +113,8 @@ Functions</h2></td></tr>
 <tr class="separator:a8f6cccb3ad293682bda6ed318059ba20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace4946393cfd4d739b309158888cdf93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#ace4946393cfd4d739b309158888cdf93">data_output</a> (const <a class="el" href="a00080.html">DMP::ProblemContainer</a> &amp;<a class="el" href="a00114.html#aa4fc2c6f71e2e8fd8651edec6648be34">problem</a>, const <a class="el" href="a00011.html#a44f23bfd1142a6885c4212e51cc0d00d">CommonTraits::GridViewType</a> &amp;gridPart)</td></tr>
 <tr class="separator:ace4946393cfd4d739b309158888cdf93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed180c058fc2d081d7da3ab6d190f6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html#a3ed180c058fc2d081d7da3ab6d190f6a">match_check</a> (const <a class="el" href="a00011.html#ab6eda23a217bc3d28eeac60b472130c4">CommonTraits::GridType</a> &amp;coarse_grid, const <a class="el" href="a00011.html#ab6eda23a217bc3d28eeac60b472130c4">CommonTraits::GridType</a> &amp;fine_grid)</td></tr>
+<tr class="separator:a3ed180c058fc2d081d7da3ab6d190f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a200b5283eba566be26cce320da330406"></a>
@@ -229,6 +232,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3ed180c058fc2d081d7da3ab6d190f6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void match_check </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00011.html#ab6eda23a217bc3d28eeac60b472130c4">CommonTraits::GridType</a> &amp;&#160;</td>
+          <td class="paramname"><em>coarse_grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00011.html#ab6eda23a217bc3d28eeac60b472130c4">CommonTraits::GridType</a> &amp;&#160;</td>
+          <td class="paramname"><em>fine_grid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="a00011.html#a813014f2fb6e07732a780aff83d5330f">Dune::Multiscale::CommonTraits::InteriorPartition</a>, and <a class="el" href="a00011.html#a82b25269a2851a9bdad388936fee45f0">Dune::Multiscale::CommonTraits::world_dim</a>.</p>
+
+<p>Referenced by <a class="el" href="a00034.html#a9acab61712359e87318894e4856aed4b">Dune::Multiscale::ErrorCalculator::print()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa16e0ee520abcb95ffc6527c1c8c9eb1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +343,7 @@ template&lt;typename L , typename R &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 7 2016 11:32:41 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 7 2016 14:07:16 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
