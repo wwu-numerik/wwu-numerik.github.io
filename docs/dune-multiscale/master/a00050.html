@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Dune::Multiscale::LocalProblemSolver Class Reference</title>
+<title>Dune::Multiscale::LocalproblemSolutionManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,76 +34,65 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00166.html">Dune</a></li><li class="navelem"><a class="el" href="a00168.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00050.html">LocalProblemSolver</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00166.html">Dune</a></li><li class="navelem"><a class="el" href="a00168.html">Multiscale</a></li><li class="navelem"><a class="el" href="a00050.html">LocalproblemSolutionManager</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00233.html">List of all members</a>  </div>
+<a href="a00234.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::Multiscale::LocalProblemSolver Class Reference</div>  </div>
+<div class="title">Dune::Multiscale::LocalproblemSolutionManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>the essential local msfem problem solver class  
+<p>One LocalSolutionManager instance per coarse cell.  
  <a href="a00050.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00130_source.html">dune/multiscale/msfem/localproblems/localproblemsolver.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00134_source.html">dune/multiscale/msfem/localproblems/localsolutionmanager.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a583e783c186d54543a95ff004d21e8c0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00003.html">BackendChooser</a><br class="typebreak"/>
-&lt; <a class="el" href="a00064.html#a9a9407ada6db8696cb1bbf99820dd4cd">MsFEMTraits::LocalSpaceType</a> &gt;<br class="typebreak"/>
-::<a class="el" href="a00050.html#a583e783c186d54543a95ff004d21e8c0">LinearOperatorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#a583e783c186d54543a95ff004d21e8c0">LinearOperatorType</a></td></tr>
-<tr class="separator:a583e783c186d54543a95ff004d21e8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a00d0dbb92acdd7eb26edf61c4f050d69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#a00d0dbb92acdd7eb26edf61c4f050d69">LocalProblemSolver</a> (const <a class="el" href="a00080.html">DMP::ProblemContainer</a> &amp;<a class="el" href="a00115.html#aa4fc2c6f71e2e8fd8651edec6648be34">problem</a>, <a class="el" href="a00011.html#a982e48095c85ff696625b4f7c3d9a601">CommonTraits::SpaceType</a> coarse_space, <a class="el" href="a00046.html">LocalGridList</a> &amp;localgrid_list)</td></tr>
-<tr class="memdesc:a00d0dbb92acdd7eb26edf61c4f050d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor - with diffusion operator A^{}(x)  <a href="#a00d0dbb92acdd7eb26edf61c4f050d69">More...</a><br/></td></tr>
-<tr class="separator:a00d0dbb92acdd7eb26edf61c4f050d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8b8264b408dcffaaecf1bddb17ea0f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#ac8b8264b408dcffaaecf1bddb17ea0f0">solve_for_all_cells</a> ()</td></tr>
-<tr class="separator:ac8b8264b408dcffaaecf1bddb17ea0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1c3b88767a5ac759255f2172bb99cf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#aa1c3b88767a5ac759255f2172bb99cf2">LocalproblemSolutionManager</a> (const <a class="el" href="a00011.html#a982e48095c85ff696625b4f7c3d9a601">CommonTraits::SpaceType</a> &amp;coarse_space, const <a class="el" href="a00064.html#ad7fea520ee2eaa0561e18b5d892b7dd7">MsFEMTraits::CoarseEntityType</a> &amp;coarseEntity, const <a class="el" href="a00046.html">LocalGridList</a> &amp;subgridList)</td></tr>
+<tr class="separator:aa1c3b88767a5ac759255f2172bb99cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874f99e2b9821fa0dfb1f25554e86a35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00064.html#a0e9e89d76f25cc126fd8778c04c0af8f">MsFEMTraits::LocalSolutionVectorType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#a874f99e2b9821fa0dfb1f25554e86a35">getLocalSolutions</a> ()</td></tr>
+<tr class="separator:a874f99e2b9821fa0dfb1f25554e86a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca2afa046473ef3075c17795d4e9dcf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00064.html#a9a9407ada6db8696cb1bbf99820dd4cd">MsFEMTraits::LocalSpaceType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#adca2afa046473ef3075c17795d4e9dcf">space</a> () const </td></tr>
+<tr class="separator:adca2afa046473ef3075c17795d4e9dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2200fee50d48cf531b446a09f6b2f8a"><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
+<a class="el" href="a00064.html#a07eb0153cbd2f04448a753a45b7d226c">MsFEMTraits::LocalGridViewType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#af2200fee50d48cf531b446a09f6b2f8a">grid_view</a> () const </td></tr>
+<tr class="separator:af2200fee50d48cf531b446a09f6b2f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac789e61dc13d15ff6894f7c12b7f1091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#ac789e61dc13d15ff6894f7c12b7f1091">load</a> ()</td></tr>
+<tr class="separator:ac789e61dc13d15ff6894f7c12b7f1091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648d6b024696e56a21f6a6872137b2b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#a648d6b024696e56a21f6a6872137b2b0">save</a> () const </td></tr>
+<tr class="separator:a648d6b024696e56a21f6a6872137b2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa265cf6938797b563acb2403e40d7221"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html#aa265cf6938797b563acb2403e40d7221">numBoundaryCorrectors</a> () const </td></tr>
+<tr class="separator:aa265cf6938797b563acb2403e40d7221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>the essential local msfem problem solver class </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a583e783c186d54543a95ff004d21e8c0"></a>
+<div class="textblock"><p>One LocalSolutionManager instance per coarse cell. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aa1c3b88767a5ac759255f2172bb99cf2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00003.html">BackendChooser</a>&lt;<a class="el" href="a00064.html#a9a9407ada6db8696cb1bbf99820dd4cd">MsFEMTraits::LocalSpaceType</a>&gt;::<a class="el" href="a00050.html#a583e783c186d54543a95ff004d21e8c0">LinearOperatorType</a> <a class="el" href="a00050.html#a583e783c186d54543a95ff004d21e8c0">Dune::Multiscale::LocalProblemSolver::LinearOperatorType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a00d0dbb92acdd7eb26edf61c4f050d69"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dune::Multiscale::LocalProblemSolver::LocalProblemSolver </td>
+          <td class="memname">Dune::Multiscale::LocalproblemSolutionManager::LocalproblemSolutionManager </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00080.html">DMP::ProblemContainer</a> &amp;&#160;</td>
-          <td class="paramname"><em>problem</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00011.html#a982e48095c85ff696625b4f7c3d9a601">CommonTraits::SpaceType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00011.html#a982e48095c85ff696625b4f7c3d9a601">CommonTraits::SpaceType</a> &amp;&#160;</td>
           <td class="paramname"><em>coarse_space</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00046.html">LocalGridList</a> &amp;&#160;</td>
-          <td class="paramname"><em>localgrid_list</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00064.html#ad7fea520ee2eaa0561e18b5d892b7dd7">MsFEMTraits::CoarseEntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>coarseEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00046.html">LocalGridList</a> &amp;&#160;</td>
+          <td class="paramname"><em>subgridList</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -113,46 +102,121 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>constructor - with diffusion operator A^{}(x) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">localgrid_list</td><td>cannot be const because Dune::Fem does not provide Gridparts that can be build on a const grid </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>References <a class="el" href="a00053.html#ac95667fa6299b6ab00e69818602783e9">Dune::Multiscale::MemoryBackend::space()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac8b8264b408dcffaaecf1bddb17ea0f0"></a>
+<a class="anchor" id="a874f99e2b9821fa0dfb1f25554e86a35"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Dune::Multiscale::LocalProblemSolver::solve_for_all_cells </td>
+          <td class="memname"><a class="el" href="a00064.html#a0e9e89d76f25cc126fd8778c04c0af8f">MsFEMTraits::LocalSolutionVectorType</a> &amp; Dune::Multiscale::LocalproblemSolutionManager::getLocalSolutions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>method for solving and saving the solutions of the local msfem problems for the whole set of macro-entities and for every unit vector e_i -&mdash; method: solve and save the whole set of local msfem problems --&mdash; Use the host-grid entities of Level 'computational_level' as computational domains for the subgrid computations </p>
-<dl class="todo"><dt><b><a class="el" href="a00186.html#_todo000005">Todo:</a></b></dt><dd>The following debug-output is wrong (number of local problems may be different) </dd></dl>
 
-<p>References <a class="el" href="a00051.html#ae67fbb46a2b9f71881ddc98449182550">Dune::Multiscale::LocalSolutionManager::getLocalSolutions()</a>, and <a class="el" href="a00051.html#aa974947d6b2fa0194c8358103a30c3a0">Dune::Multiscale::LocalSolutionManager::save()</a>.</p>
+<p>Referenced by <a class="el" href="a00059.html#a10cd108db611991ec5612c342084af3a">Dune::Multiscale::MsFEMCodim0Integral::apply()</a>, <a class="el" href="a00084.html#a9c76232692a24faa3bc611f6628c4ee7">Dune::Multiscale::RhsCodim0Integral::apply()</a>, and <a class="el" href="a00051.html#ac8b8264b408dcffaaecf1bddb17ea0f0">Dune::Multiscale::LocalProblemSolver::solve_for_all_cells()</a>.</p>
 
-<p>Referenced by <a class="el" href="a00032.html#af038e27ada1857fb5594b46c180353cd">Dune::Multiscale::Elliptic_MsFEM_Solver::apply()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="af2200fee50d48cf531b446a09f6b2f8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00064.html#a07eb0153cbd2f04448a753a45b7d226c">MsFEMTraits::LocalGridViewType</a>&amp; Dune::Multiscale::LocalproblemSolutionManager::grid_view </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac789e61dc13d15ff6894f7c12b7f1091"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dune::Multiscale::LocalproblemSolutionManager::load </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="a00053.html#a867322680b876e943a0cddecb90cf3c3">Dune::Multiscale::MemoryBackend::read()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa265cf6938797b563acb2403e40d7221"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t Dune::Multiscale::LocalproblemSolutionManager::numBoundaryCorrectors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="a00059.html#a10cd108db611991ec5612c342084af3a">Dune::Multiscale::MsFEMCodim0Integral::apply()</a>, and <a class="el" href="a00084.html#a9c76232692a24faa3bc611f6628c4ee7">Dune::Multiscale::RhsCodim0Integral::apply()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a648d6b024696e56a21f6a6872137b2b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dune::Multiscale::LocalproblemSolutionManager::save </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="a00053.html#a82d0b83ac5001178baba3ab52b7c6486">Dune::Multiscale::MemoryBackend::append()</a>.</p>
+
+<p>Referenced by <a class="el" href="a00051.html#ac8b8264b408dcffaaecf1bddb17ea0f0">Dune::Multiscale::LocalProblemSolver::solve_for_all_cells()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adca2afa046473ef3075c17795d4e9dcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00064.html#a9a9407ada6db8696cb1bbf99820dd4cd">MsFEMTraits::LocalSpaceType</a> &amp; Dune::Multiscale::LocalproblemSolutionManager::space </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="a00053.html#ac95667fa6299b6ab00e69818602783e9">Dune::Multiscale::MemoryBackend::space()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="a00130_source.html">localproblemsolver.hh</a></li>
-<li><a class="el" href="a00129.html">localproblemsolver.cc</a></li>
+<li><a class="el" href="a00134_source.html">localsolutionmanager.hh</a></li>
+<li><a class="el" href="a00133.html">localsolutionmanager.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 10 2016 10:09:28 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 14 2016 10:58:15 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

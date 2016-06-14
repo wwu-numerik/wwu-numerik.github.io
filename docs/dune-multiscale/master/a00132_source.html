@@ -79,17 +79,19 @@
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="a00047.html">LocalGridSearch</a>&amp; <a class="code" href="a00052.html#a65198b323d491d0f8e36c66054e1aa0f">search</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00052.html#a74cfed82ed9771f04ed90e9c2d82ebd9">visualize_parts</a>(<span class="keyword">const</span> XT::Common::Configuration&amp; config) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="a00052.html#a83771ab1aed4f1d9d1dcf1fcbd295214">CorrectionsMapType</a> corrections_;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">const</span> <a class="code" href="a00011.html#a44f23bfd1142a6885c4212e51cc0d00d">CommonTraits::GridViewType</a> view_;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">const</span> LeafIndexSetType&amp; index_set_;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  Dune::XT::Common::PerThreadValue&lt;LocalGridSearch&gt; search_;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="comment">// namespace Multiscale {</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace Dune {</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // DUNE_MULTISCALE_MSFEM_LOCALSOLUTION_PROXY_HH</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00052.html#a934d0aa8a6d05c379b794cbf97ee15ff">visualize</a>(<span class="keyword">const</span> std::string&amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="a00052.html#a83771ab1aed4f1d9d1dcf1fcbd295214">CorrectionsMapType</a> corrections_;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> <a class="code" href="a00011.html#a44f23bfd1142a6885c4212e51cc0d00d">CommonTraits::GridViewType</a> view_;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> LeafIndexSetType&amp; index_set_;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  Dune::XT::Common::PerThreadValue&lt;LocalGridSearch&gt; search_;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// namespace Multiscale {</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <span class="comment">// namespace Dune {</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // DUNE_MULTISCALE_MSFEM_LOCALSOLUTION_PROXY_HH</span></div>
 <div class="ttc" id="a00011_html_a982e48095c85ff696625b4f7c3d9a601"><div class="ttname"><a href="a00011.html#a982e48095c85ff696625b4f7c3d9a601">Dune::Multiscale::CommonTraits::SpaceType</a></div><div class="ttdeci">SpaceChooserType::Type SpaceType</div><div class="ttdef"><b>Definition:</b> traits.hh:84</div></div>
 <div class="ttc" id="a00011_html_a44f23bfd1142a6885c4212e51cc0d00d"><div class="ttname"><a href="a00011.html#a44f23bfd1142a6885c4212e51cc0d00d">Dune::Multiscale::CommonTraits::GridViewType</a></div><div class="ttdeci">SpaceType::GridViewType GridViewType</div><div class="ttdef"><b>Definition:</b> traits.hh:88</div></div>
 <div class="ttc" id="a00052_html_a8edf4ccfb3eac22184f3fd41545d6ffa"><div class="ttname"><a href="a00052.html#a8edf4ccfb3eac22184f3fd41545d6ffa">Dune::Multiscale::LocalsolutionProxy::local_function</a></div><div class="ttdeci">std::unique_ptr&lt; LocalFunctionType &gt; local_function(const typename BaseType::EntityType &amp;entity) const </div><div class="ttdef"><b>Definition:</b> localsolution_proxy.cc:23</div></div>
@@ -103,13 +105,14 @@
 <div class="ttc" id="a00052_html_a65198b323d491d0f8e36c66054e1aa0f"><div class="ttname"><a href="a00052.html#a65198b323d491d0f8e36c66054e1aa0f">Dune::Multiscale::LocalsolutionProxy::search</a></div><div class="ttdeci">LocalGridSearch &amp; search()</div><div class="ttdef"><b>Definition:</b> localsolution_proxy.cc:50</div></div>
 <div class="ttc" id="a00052_html_a83771ab1aed4f1d9d1dcf1fcbd295214"><div class="ttname"><a href="a00052.html#a83771ab1aed4f1d9d1dcf1fcbd295214">Dune::Multiscale::LocalsolutionProxy::CorrectionsMapType</a></div><div class="ttdeci">std::unordered_map&lt; typename LeafIndexSetType::IndexType, std::unique_ptr&lt; MsFEMTraits::LocalGridDiscreteFunctionType &gt; &gt; CorrectionsMapType</div><div class="ttdef"><b>Definition:</b> localsolution_proxy.hh:31</div></div>
 <div class="ttc" id="a00052_html"><div class="ttname"><a href="a00052.html">Dune::Multiscale::LocalsolutionProxy</a></div><div class="ttdef"><b>Definition:</b> localsolution_proxy.hh:23</div></div>
+<div class="ttc" id="a00052_html_a934d0aa8a6d05c379b794cbf97ee15ff"><div class="ttname"><a href="a00052.html#a934d0aa8a6d05c379b794cbf97ee15ff">Dune::Multiscale::LocalsolutionProxy::visualize</a></div><div class="ttdeci">void visualize(const std::string &amp;) const </div><div class="ttdef"><b>Definition:</b> localsolution_proxy.cc:64</div></div>
 <div class="ttc" id="a00165_html"><div class="ttname"><a href="a00165.html">traits.hh</a></div></div>
 <div class="ttc" id="a00052_html_a74cfed82ed9771f04ed90e9c2d82ebd9"><div class="ttname"><a href="a00052.html#a74cfed82ed9771f04ed90e9c2d82ebd9">Dune::Multiscale::LocalsolutionProxy::visualize_parts</a></div><div class="ttdeci">void visualize_parts(const XT::Common::Configuration &amp;config) const </div><div class="ttdef"><b>Definition:</b> localsolution_proxy.cc:52</div></div>
 <div class="ttc" id="a00052_html_a878352823a9bf026097c4045a4c5e4c3"><div class="ttname"><a href="a00052.html#a878352823a9bf026097c4045a4c5e4c3">Dune::Multiscale::LocalsolutionProxy::LocalsolutionProxy</a></div><div class="ttdeci">LocalsolutionProxy(CorrectionsMapType &amp;&amp;corrections, const CommonTraits::SpaceType &amp;coarseSpace, const LocalGridList &amp;gridlist)</div><div class="ttdef"><b>Definition:</b> localsolution_proxy.cc:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 10 2016 10:09:28 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 14 2016 10:58:15 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -68,8 +68,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a57c6860946b35e8fd80a2f788c43a4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30168d93ded30de8adc73b639bb08274"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a30168d93ded30de8adc73b639bb08274">numTmpObjectsRequired</a> () const </td></tr>
 <tr class="separator:a30168d93ded30de8adc73b639bb08274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1dd44b13038ff6453224ef89e186307"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#ae1dd44b13038ff6453224ef89e186307">apply</a> (<a class="el" href="a00064.html#a1f948936de224d3fb8bfb092724765a1">MsFEMTraits::LocalGridDiscreteFunctionType</a> &amp;dirichletExtension, <a class="el" href="a00051.html">Multiscale::LocalSolutionManager</a> &amp;localSolutionManager, const <a class="el" href="a00064.html#a3f66f863e24b76df865297dbe89a9b06">MsFEMTraits::LocalEntityType</a> &amp;localGridEntity, const TestLocalfunctionSetInterfaceType &amp;testBase, Dune::DynamicVector&lt; <a class="el" href="a00011.html#ad6456fa431c1b38c012553f69b5e05fa">CommonTraits::RangeFieldType</a> &gt; &amp;ret, std::vector&lt; Dune::DynamicVector&lt; <a class="el" href="a00011.html#ad6456fa431c1b38c012553f69b5e05fa">CommonTraits::RangeFieldType</a> &gt;&gt; &amp;tmpLocalVectors) const </td></tr>
-<tr class="separator:ae1dd44b13038ff6453224ef89e186307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c76232692a24faa3bc611f6628c4ee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a9c76232692a24faa3bc611f6628c4ee7">apply</a> (<a class="el" href="a00064.html#a1f948936de224d3fb8bfb092724765a1">MsFEMTraits::LocalGridDiscreteFunctionType</a> &amp;dirichletExtension, <a class="el" href="a00050.html">Multiscale::LocalproblemSolutionManager</a> &amp;localSolutionManager, const <a class="el" href="a00064.html#a3f66f863e24b76df865297dbe89a9b06">MsFEMTraits::LocalEntityType</a> &amp;localGridEntity, const TestLocalfunctionSetInterfaceType &amp;testBase, Dune::DynamicVector&lt; <a class="el" href="a00011.html#ad6456fa431c1b38c012553f69b5e05fa">CommonTraits::RangeFieldType</a> &gt; &amp;ret, std::vector&lt; Dune::DynamicVector&lt; <a class="el" href="a00011.html#ad6456fa431c1b38c012553f69b5e05fa">CommonTraits::RangeFieldType</a> &gt;&gt; &amp;tmpLocalVectors) const </td></tr>
+<tr class="separator:a9c76232692a24faa3bc611f6628c4ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ae9beab370fec611a91303a6069bfa786"></a>
@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae1dd44b13038ff6453224ef89e186307"></a>
+<a class="anchor" id="a9c76232692a24faa3bc611f6628c4ee7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -133,7 +133,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00051.html">Multiscale::LocalSolutionManager</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00050.html">Multiscale::LocalproblemSolutionManager</a> &amp;&#160;</td>
           <td class="paramname"><em>localSolutionManager</em>, </td>
         </tr>
         <tr>
@@ -169,7 +169,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section attention"><dt>Attention</dt><dd>At this point we assume, that the quadrature points on the subgrid and hostgrid are the same (dirichletExtensionLF is a localfunction on the hostgrid, quadPoint stems from a quadrature on the subgrid)!! </dd></dl>
 
-<p>References <a class="el" href="a00080.html#a88f0442493db44b34aff5d8553bf76f3">Dune::Multiscale::Problem::ProblemContainer::getDiffusion()</a>, <a class="el" href="a00051.html#ae67fbb46a2b9f71881ddc98449182550">Dune::Multiscale::LocalSolutionManager::getLocalSolutions()</a>, <a class="el" href="a00080.html#a543ab6ed2275f898f776c89053936f27">Dune::Multiscale::Problem::ProblemContainer::getSource()</a>, <a class="el" href="a00051.html#a5925cd5258750e9d923293856a3d8839">Dune::Multiscale::LocalSolutionManager::numBoundaryCorrectors()</a>, and <a class="el" href="a00181.html#ga93b262cf5f71eff3d2db2382682dec28">Dune::Multiscale::Problem::DiffusionBase::order()</a>.</p>
+<p>References <a class="el" href="a00080.html#a88f0442493db44b34aff5d8553bf76f3">Dune::Multiscale::Problem::ProblemContainer::getDiffusion()</a>, <a class="el" href="a00050.html#a874f99e2b9821fa0dfb1f25554e86a35">Dune::Multiscale::LocalproblemSolutionManager::getLocalSolutions()</a>, <a class="el" href="a00080.html#a543ab6ed2275f898f776c89053936f27">Dune::Multiscale::Problem::ProblemContainer::getSource()</a>, <a class="el" href="a00050.html#aa265cf6938797b563acb2403e40d7221">Dune::Multiscale::LocalproblemSolutionManager::numBoundaryCorrectors()</a>, and <a class="el" href="a00181.html#ga93b262cf5f71eff3d2db2382682dec28">Dune::Multiscale::Problem::DiffusionBase::order()</a>.</p>
 
 <p>Referenced by <a class="el" href="a00086.html#a38a72e6947ef84b45fa2f3cc10757288">Dune::Multiscale::RhsCodim0Vector::assembleLocal()</a>.</p>
 
@@ -199,7 +199,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 10 2016 10:09:28 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 14 2016 10:58:15 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
